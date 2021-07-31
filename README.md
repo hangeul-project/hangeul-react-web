@@ -2,9 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## ‼️ Tools 
+- IDE : `vscode` 사용 (권장)
+    - [블로그포스트 : vscode 에서 react 사용하기](https://blog.ull.im/engineering/2018/11/30/using-react-in-vs-code.html)
+    - [vscode react tutorial](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
+- CI&CD : Github Actions & Firebase Hosting 
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### ‼️ `npm run lint`
+lint check 를 진행합니다. 본 레포는 husky 라는 git hook 을 사용하여, `git commit` 이라는 커맨드를 사용하면 자동으로 스테이징된 파일들에 대해서 lint check 를 진행하므로, `npm run lint` 는 파일을 작성하는 도중에 확인하는 용도로 사용하시면 됩니다. 
 
 ### `npm start`
 
