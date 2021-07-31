@@ -17,11 +17,19 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "precommit": "lint-staged"
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
-  }, 
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -50,6 +58,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "lint-staged": "^11.1.1"
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2"
   }
 }
