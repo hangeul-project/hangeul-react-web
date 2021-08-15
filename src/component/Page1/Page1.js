@@ -12,7 +12,6 @@ const Page1 = () => {
 
   return (
     <>
-      7
       <div>
         <div
           className="greeting__first"
