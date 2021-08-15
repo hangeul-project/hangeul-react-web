@@ -1,4 +1,4 @@
-body {
+.Page1__container {
   background-color: black;
   color: white;
 }
@@ -34,8 +34,8 @@ body {
   font-size: 60px;
   width: 50vh;
   height: 15vh;
-  text-align: center;
-  margin-left: 500px;
+  text-align: left;
+  margin-left: 350px;
 }
 
 .greeting__third {
