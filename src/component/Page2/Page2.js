@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "./Page2.css";
-import "../Page3/Page3";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Page3 from "../Page3/Page3";
 import "../Page1/aos.css";
-import "./cat.jpeg";
+import cat from "./cat.jpeg";
 
 export default function Page2() {
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Page2() {
         <div data aos="fade-up" data-aos-duraiton="3000">
           ...?
         </div>
-        <img className="cat" alt="cute cat" src="cat.jpeg" />
+        <img className="cat" alt="cute cat" src={cat} />
       </div>
       <div>
         <Router>
