@@ -1,0 +1,10 @@
+.options {
+  font-size: 30px;
+}
+
+.Page3_text {
+  position: absolute;
+  right: 20%;
+  left: 20%;
+  writing-mode: horizontal-tb;
+}
