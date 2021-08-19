@@ -16,11 +16,16 @@ class Page4 extends Component {
             alt="캐릭터"
           />
           <div className="you__char">
-            <div className="align">
-              당신은 한글나라의 최고 인기아이돌 김씨소년단입니다!
+            <div className="description">
+              당신은 한글나라의 <br /> 최고 인기아이돌 김씨소년단입니다!
             </div>
           </div>
           <span className="char__name">도도한 김씨소년단</span>
+          <div className="choice">
+            <button className="choice__first">끝내겠소</button>
+            <button className="choice__second">기부하겠소</button>
+            <button className="choice__third">공유하겠소</button>
+          </div>
         </div>
       </>
     );

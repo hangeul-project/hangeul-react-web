@@ -7,6 +7,8 @@ body {
   margin: 25px;
   color: white;
   height: 100vh;
+  width: auto;
+  height: auto;
 }
 
 .you {
@@ -22,14 +24,14 @@ body {
   border: 2px solid goldenrod;
   padding: 50px;
   margin: 40px;
+  width: auto;
   margin-top: 30px;
   margin-left: 50px;
   float: right;
   display: flex; /* inline block에 대한 문제점 해결 */
   align-items: center;
   justify-content: center;
-  height: 360px;
-  width: 350px;
+  height: 330px;
   text-align: center;
 }
 
@@ -42,11 +44,33 @@ body {
 }
 
 .char__name {
-  margin-top: 25px;
-  margin-left: 50px;
+  margin-top: 0px;
+  margin-left: 75px;
   color: white;
-  font-size: 37px;
+  font-size: 40px;
   display: block;
   width: 33%;
   text-align: center;
+}
+.choice {
+  display: inline-block flex;
+}
+.choice__first {
+  display: inline;
+  float: right;
+  padding: 5px;
+}
+.choice__second {
+  display: inline;
+  float: right;
+  padding: 5px;
+}
+.choice__third {
+  display: inline;
+  float: right;
+  padding: 5px;
+}
+
+.description {
+  font-size: 25px;
 }
