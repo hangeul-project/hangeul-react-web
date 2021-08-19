@@ -12,7 +12,7 @@ const Page1 = () => {
 
   return (
     <>
-      <div>
+      <div className="container">
         <div
           className="greeting__first"
           data-aos="fade-in"

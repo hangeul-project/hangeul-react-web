@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+}
+.container {
+  border: 2px solid white;
+  padding: 50px;
+  margin: 25px;
+  color: white;
+  height: 100vh;
+}
+
+.you {
+  margin-top: 60px;
+  margin-left: 15px;
+  font-size: 70px;
+  color: white;
+  width: 40vh;
+}
+
+.you__char {
+  display: inline-block;
+  border: 2px solid goldenrod;
+  padding: 50px;
+  margin: 40px;
+  margin-top: 30px;
+  margin-left: 50px;
+  float: right;
+  display: flex; /* inline block에 대한 문제점 해결 */
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+  width: 350px;
+  text-align: center;
+}
+
+.char {
+  margin-left: 50px;
+  margin-top: 30px;
+  display: inline;
+  width: 40vh;
+  height: 50vh;
+}
+
+.char__name {
+  margin-top: 25px;
+  margin-left: 50px;
+  color: white;
+  font-size: 37px;
+  display: block;
+  width: 33%;
+  text-align: center;
+}
