@@ -1,17 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AOS from "aos";
+import sejong from "./sejong.jpeg";
+import "../Page1/aos.css";
+import "./Page3.css";
 
 export default function Page3() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
-      <div className="Sejong">
+      <div
+        className="Sejong"
+        data-aos="fade-up"
+        data-aos-duraiton="1000"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <h2> 나에 대해 맞춰 보라굿!</h2>
+        <img
+          className="sejong_photo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          alt="sejong"
+          src={sejong}
+        />
       </div>
-      <div className="Title">
+      <div
+        className="Sejong"
+        data-aos="fade-up"
+        data-aos-duraiton="1000"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <h1>제 1회 천하제일 세종대회</h1>
         <h3>단 10문제로 알아보는 세종대왕 인싸력 테스트</h3>
+      </div>
+      <div>
         <Router>
-          <Link to="/Q1"> 문제 시작 </Link>
+          <Link to="/Q1">문제 시작</Link>
           <Switch>
             <Route path="/Q1">
               <Q1 />
@@ -57,6 +87,8 @@ function Q2() {
           <li className="options"> O </li>
           <li className="options"> X </li>
         </ul>
+      </div>
+      <div>
         <Router>
           <Link to="/Q3"> 다음 문제 </Link>
           <Switch>
@@ -79,6 +111,8 @@ function Q3() {
           <li className="options"> O </li>
           <li className="options"> X </li>
         </ul>
+      </div>
+      <div>
         <Router>
           <Link to="/Q4"> 다음 문제 </Link>
           <Switch>
@@ -103,6 +137,8 @@ function Q4() {
           <li className="options"> ㅁ = Hangeul ㅇ = Hangul</li>
           <li className="options"> ㅁ = Hangul ㅇ = Hangeul</li>
         </ol>
+      </div>
+      <div>
         <Router>
           <Link to="/Q5"> 다음 문제 </Link>
           <Switch>
@@ -127,6 +163,8 @@ function Q5() {
           <li className="options"> 사과 </li>
           <li className="options"> 석류 </li>
         </ol>
+      </div>
+      <div>
         <Router>
           <Link to="/Q6"> 다음 문제 </Link>
           <Switch>
@@ -151,6 +189,8 @@ function Q6() {
           <li className="options"> 쭈꾸미 </li>
           <li className="options"> 고기집 </li>
         </ol>
+      </div>
+      <div>
         <Router>
           <Link to="/Q7"> 다음 문제 </Link>
           <Switch>
@@ -175,6 +215,8 @@ function Q7() {
           <li className="options"> 이번엔 네가 꼭 이기길 바라 </li>
           <li className="options"> 네가 그러던 말던 상관 안 한다 </li>
         </ol>
+      </div>
+      <div>
         <Router>
           <Link to="/Q8"> 다음 문제 </Link>
           <Switch>
@@ -201,6 +243,8 @@ function Q8() {
           <li className="options"> 도담도담: 어린아이가 무탈하게 잘 자란다 </li>
           <li className="options"> 미래내: 숲 속에 있는 작은 냇가 </li>
         </ol>
+      </div>
+      <div>
         <Router>
           <Link to="/Q9"> 다음 문제 </Link>
           <Switch>
@@ -227,6 +271,8 @@ function Q9() {
           <li className="options"> 야채는 그만큼이면 충분하다. </li>
           <li className="options"> 이 일은 나와 너밖에 모른다. </li>
         </ol>
+      </div>
+      <div>
         <Router>
           <Link to="/Q10"> 다음 문제 </Link>
           <Switch>

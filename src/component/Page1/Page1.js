@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "./aos.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Page1.css";
-import Page2 from "../Page2/Page2";
 
 const Page1 = () => {
   useEffect(() => {
@@ -64,16 +62,6 @@ const Page1 = () => {
         >
           <div className="greeting__sawa">สวัสดีครับ</div>
         </div>
-      </div>
-      <div>
-        <Router>
-          <Link to="/Page2"> 시작하기 </Link>
-          <Switch>
-            <Route path="/Page2">
-              <Page2 />
-            </Route>
-          </Switch>
-        </Router>
       </div>
     </>
   );

@@ -1,10 +1,14 @@
-.options {
+.Sejong {
   font-size: 30px;
 }
 
 .Page3_text {
-  position: absolute;
-  right: 20%;
-  left: 20%;
+  font-size: 25px;
   writing-mode: horizontal-tb;
+  text-align: center;
+}
+
+.sejong_photo {
+  height: 200px;
+  width: 200px;
 }
