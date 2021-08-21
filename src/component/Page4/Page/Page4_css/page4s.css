@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+}
+.container {
+  border: 2px solid white;
+  padding: 50px;
+  margin: 25px;
+  color: white;
+  height: 100vh;
+  width: auto;
+  height: auto;
+}
+
+.youris {
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+.name {
+  font-size: 25px;
+  width: 400px;
+  text-align: center;
+}
+.content {
+  height: auto;
+  display: inline flex;
+  position: relative;
+}
+
+.btn {
+  width: auto;
+  float: right;
+  position: relative;
+  bottom: 50px;
+  right: 4px;
+}
+
+.where {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px goldenrod;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 0px;
+  height: 51vh;
+  width: 40vh;
+  position: absolute;
+  left: 500px;
+  bottom: 265px;
+}
+
+.btn__social {
+  display: flex;
+  position: relative;
+  left: 500px;
+  bottom: 230px;
+  border-radius: 5px;
+}

@@ -12,7 +12,7 @@ const Page1 = () => {
 
   return (
     <>
-      <div>
+      <div className="container">
         <div
           className="greeting__first"
           data-aos="fade-in"
@@ -39,7 +39,7 @@ const Page1 = () => {
           data-aos-easing="ease-in-sine"
           data-aos-duration="2500"
         >
-          <span className="greeting__hi">你好</span>
+          <span className="greeting__hi">NI HAO</span>
           <p className="greeting__korean">안녕하세요</p>
           <span className="greeting__bonjour">Bonjour</span>
         </div>
