@@ -17,7 +17,7 @@ export default function Page2() {
         <div data aos="fade-up" data-aos-duraiton="3000">
           ...?
         </div>
-        <img className="photo" alt="cute cat" src={cat} />
+        <img className="cat_photo" alt="cute cat" src={cat} />
       </div>
     </>
   );
