@@ -23,7 +23,6 @@ export default function Page2() {
           나 랏〮 말〯 ᄊᆞ 미〮 中 國 에〮 달 아〮
         </div>
         <br />
-        <br />
         <div className="Page2_together">
           <div
             className="Page2_line2"
@@ -36,7 +35,6 @@ export default function Page2() {
             <span> 아 니〮 ᄒᆞᆯ ᄊᆡ〮</span>
           </div>
           <br />
-          <br />
           <div
             data-aos="fade-in"
             data-aos-offset="5"
@@ -45,10 +43,7 @@ export default function Page2() {
           >
             ...?
           </div>
-          <br />
-          <br />
         </div>
-        <br />
         <br />
         <img className="cat_photo" alt="cute cat" src={cat} />
       </div>
