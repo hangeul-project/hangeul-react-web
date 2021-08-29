@@ -10,13 +10,46 @@ export default function Page2() {
   }, []);
   return (
     <>
-      <div className="Page2_text" data-aos="fade-up" data-aos-duration="1000">
-        <p>나랏말싸미 듕귁에달아 문자와로</p>
+      <div className="Page2_text">
         <br />
-        <p data-aos-duration="2000"> 서로 사맛디 아니할쎄</p>
-        <div data aos="fade-up" data-aos-duraiton="3000">
-          ...?
+        <br />
+        <div
+          className="Page2_line1"
+          data-aos="fade-in"
+          data-aos-offset="5"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="100"
+        >
+          나 랏〮 말〯 ᄊᆞ 미〮 中 國 에〮 달 아〮
         </div>
+        <br />
+        <br />
+        <div className="Page2_together">
+          <div
+            className="Page2_line2"
+            data-aos="fade-in"
+            data-aos-offset="5"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="1000"
+          >
+            <span>文 字 와〮 서 르 ᄉᆞ ᄆᆞᆺ 디〮</span>
+            <span> 아 니〮 ᄒᆞᆯ ᄊᆡ〮</span>
+          </div>
+          <br />
+          <br />
+          <div
+            data-aos="fade-in"
+            data-aos-offset="5"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="2000"
+          >
+            ...?
+          </div>
+          <br />
+          <br />
+        </div>
+        <br />
+        <br />
         <img className="cat_photo" alt="cute cat" src={cat} />
       </div>
     </>

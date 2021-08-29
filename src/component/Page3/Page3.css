@@ -1,14 +1,12 @@
+body{height:100%; width:100%;}
 .Sejong {
   font-size: 30px;
+  text-align:center;
 }
-
+.sejong_photo{
+  width:100%;
+}
 .Page3_text {
   font-size: 25px;
-  writing-mode: horizontal-tb;
   text-align: center;
-}
-
-.sejong_photo {
-  height: 200px;
-  width: 200px;
 }
