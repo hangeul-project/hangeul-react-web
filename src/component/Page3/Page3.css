@@ -13,15 +13,14 @@ body {
   position: absolute;
 }
 .Page3_text {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
 .cele {
   width: 818px;
   height: 60px;
-  margin: 4px 688px 19px 414px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -31,5 +30,5 @@ body {
   color: #292929;
   position: relative;
   top: 700px;
-  left: 30%;
+  left: 100%;
 }

@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "국립박물관문화재단클래식M";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (min-width: 441px) {
   body {
     color: white;
     background-color: #292929;
     position: relative;
     right: 3vw;
+    font-family: 국립박물관문화재단클래식M;
   }
 
   button {
@@ -48,9 +57,9 @@
   }
 
   .greeting__hi {
-    font-size: 2vw;
+    font-size: 4vw;
     width: 5vh;
-    margin-left: 30vw;
+    margin-left: 80vw;
   }
 
   .greeting__bonjour {

@@ -64,7 +64,7 @@ export default function Page2() {
           data-aos-easing="ease-in-sine"
           data-aos-delay="3000"
         >
-          <img className="gamagi" alt="gamagi" src={gamagi} width="500px" />
+          <img className="gamagi" alt="gamagi" src={gamagi} width="400px" />
         </div>
       </div>
     </>

@@ -1,4 +1,13 @@
+@font-face {
+  font-family: "Jaemin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jaemin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .Page2_text {
+  font-family: Jaemin;
   font-size: 50px;
   font-style: bold;
   writing-mode: vertical-lr;
