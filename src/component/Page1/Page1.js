@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./aos.css";
 import "./Page1.css";
+import Page2 from "../Page2/Page2";
 
 const Page1 = () => {
   useEffect(() => {
@@ -85,7 +87,12 @@ const Page1 = () => {
           data-aos-easing="ease-in-sine"
           data-aos-delay="2500"
         >
-          <button type="button">다음</button>
+          <Router>
+            <Link to="Page2">다음으로</Link>
+            <Switch>
+              <Route path="/Page2" component={Page2} />
+            </Switch>
+          </Router>
         </span>
       </div>
     </>
