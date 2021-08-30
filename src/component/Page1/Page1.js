@@ -55,7 +55,7 @@ const Page1 = () => {
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="90000"
+          data-aos-duration="3000"
         >
           <span className="greeting__bonjour">Bonjour</span>
         </div>
@@ -64,20 +64,29 @@ const Page1 = () => {
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="8000"
+          data-aos-duration="3000"
         >
           <div className="greeting__hola">¡Hola</div>
           <div className="greeting__goni">こんにちは</div>
         </div>
-        <div
+        <span
           className="greeting__fifth"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="4000"
+          data-aos-duration="3000"
         >
-          <div className="greeting__sawa">สวัสดีครับ</div>
-        </div>
+          <span className="greeting__sawa">สวัสดีครับ</span>
+        </span>
+        <span
+          className="greeting__last"
+          data-aos="fade-in"
+          data-aos-offset="5"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="2500"
+        >
+          <button type="button">다음</button>
+        </span>
       </div>
     </>
   );
