@@ -19,7 +19,7 @@ export default function Page3() {
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
-        <img
+        {/* <img
           className="sejong_photo"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -27,8 +27,7 @@ export default function Page3() {
           data-aos-anchor-placement="top-center"
           alt="sejong"
           src={sejong}
-        />
-        <span className="cele">한글날 기념</span>
+        /> */}
       </div>
       <div
         className="Sejong"

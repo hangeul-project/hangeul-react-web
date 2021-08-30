@@ -21,7 +21,7 @@ export default function PageScroll() {
             <Page1 />
           </Scroll.Link>
         </li>
-        <li>
+        {/* <li>
           <Scroll.Link
             activeClass="active"
             to="/"
@@ -44,7 +44,7 @@ export default function PageScroll() {
           >
             <Page3 />
           </Scroll.Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   )

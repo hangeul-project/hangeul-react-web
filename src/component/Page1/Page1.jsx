@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom"
 import AOS from "aos"
 import "./aos.css"
 import "./Page1.css"
@@ -83,10 +84,21 @@ const Page1 = () => {
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
         >
-          <button type="button">다음으로</button>
+          <Home></Home>
         </div>
       </div>
     </>
+  )
+}
+
+function Home() {
+  function handleClick(e) {
+    window.location.replace("/Page2")
+  }
+  return (
+    <button type="button" onClick={handleClick}>
+      다음으로
+    </button>
   )
 }
 
