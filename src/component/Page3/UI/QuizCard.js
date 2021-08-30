@@ -12,6 +12,7 @@ const QuizCard = ({ question, answerArray, currentQuizId, onAnswerClick }) => {
           return (
             <div key={item.answer} className="answer-item">
               {idx}. {item.answer}
+              {/* TODO : Update this part with radio button */}
               {item.isCorrect && <span> ❤️정답❤️</span>}
             </div>
           );

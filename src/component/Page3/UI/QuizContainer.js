@@ -38,7 +38,7 @@ const QuizContainer = (props) => {
     answers = [];
     return null;
   });
-
+  // TODO : Optimize this part
   return (
     <div className="quiz-container-outer">
       <QuizProgressBar progress={solvedQuizCount + 1} />
