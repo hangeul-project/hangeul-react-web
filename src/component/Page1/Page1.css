@@ -1,12 +1,12 @@
 @media (min-width: 441px) {
-  body {
+  .outer-container {
     color: white;
     background-color: black;
     position: relative;
     right: 3vw;
   }
 
-  button {
+  .page1-button {
     height: 20px;
     width: 70px;
     margin: -20px -50px;

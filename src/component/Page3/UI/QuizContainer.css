@@ -1,0 +1,7 @@
+.quiz-container-outer {
+    margin: 1rem auto;
+    padding: 2rem;
+    max-width: 750px;
+    border-style: dashed;
+    border-color: grey;
+}

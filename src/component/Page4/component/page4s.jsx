@@ -21,10 +21,10 @@ function page4s() {
           <div className="content__right">
             <div className="where">어디로 공유하시겠소?</div>
             <div className="btn__social">
-              <button type="button__kakao">카카오톡</button>
-              <button type="button__facebook">페이스북</button>
-              <button type="button__twitter">트위터</button>
-              <button type="button_insta">인스타그램</button>
+              <button type="button">카카오톡</button>
+              <button type="button">페이스북</button>
+              <button type="button">트위터</button>
+              <button type="button">인스타그램</button>
             </div>
             <div className="btn">
               <button type="button">끝내겠소</button>
