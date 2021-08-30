@@ -1,7 +1,7 @@
 @media (min-width: 441px) {
   body {
     color: white;
-    background-color: black;
+    background-color: #292929;
     position: relative;
     right: 3vw;
   }
@@ -81,7 +81,7 @@
 @media (max-width: 440px) {
   body {
     color: white;
-    background-color: black;
+    background-color: #292929;
     position: relative;
     right: 3vw;
   }
