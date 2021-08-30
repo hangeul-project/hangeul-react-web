@@ -5,6 +5,16 @@
     position: relative;
     right: 3vw;
   }
+
+  button {
+    height: 20px;
+    width: 70px;
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 100%;
+  }
+
   .container {
     padding-top: 1vh;
     width: 100%;
@@ -37,9 +47,6 @@
     margin-left: 15vw;
   }
 
-  .greeting__third {
-  }
-
   .greeting__hi {
     font-size: 2vw;
     width: 5vh;
@@ -56,9 +63,6 @@
     margin-left: 34vw;
   }
 
-  .greeting__fourth {
-  }
-
   .greeting__hola {
     font-size: 5vw;
     margin-left: 10vw;
@@ -69,15 +73,9 @@
     margin-left: 65vw;
   }
 
-  .greeting__fifth {
-  }
-
   .greeting__sawa {
     font-size: 3vw;
     margin-left: 40vw;
-  }
-
-  .greeting__last {
   }
 }
 @media (max-width: 440px) {
@@ -121,9 +119,6 @@
     margin-left: 15vw;
   }
 
-  .greeting__third {
-  }
-
   .greeting__hi {
     font-size: 2vw;
     width: 5vh;
@@ -140,9 +135,6 @@
     margin-left: 28vw;
   }
 
-  .greeting__fourth {
-  }
-
   .greeting__hola {
     font-size: 5vw;
     margin-left: 10vw;
@@ -153,14 +145,12 @@
     margin-left: 65vw;
   }
 
-  .greeting__fifth {
-  }
-
   .greeting__sawa {
     font-size: 3vw;
     margin-left: 40vw;
   }
 
-  .greeting__last {
+  .next {
+    text-align: right;
   }
 }

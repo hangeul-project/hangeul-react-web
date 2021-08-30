@@ -1,13 +1,14 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "./Page2.css";
-import "../Page1/aos.css";
-import cat from "./cat.jpeg";
+import React, { useEffect } from "react"
+import AOS from "aos"
+import "./Page2.css"
+import "../Page1/aos.css"
+import jjum from "../Page2/pg2_img/jjum.png"
+import gamagi from "../Page2/pg2_img/gamagi.png"
 
 export default function Page2() {
   useEffect(() => {
-    AOS.init();
-  }, []);
+    AOS.init()
+  }, [])
   return (
     <>
       <div className="Page2_text">
@@ -20,7 +21,8 @@ export default function Page2() {
           data-aos-easing="ease-in-sine"
           data-aos-delay="100"
         >
-          나 랏〮 말〯 ᄊᆞ 미〮 中 國 에〮 달 아〮
+          <br />
+          나랏말싸미듕긱에달아
         </div>
         <br />
         <br />
@@ -32,8 +34,10 @@ export default function Page2() {
             data-aos-easing="ease-in-sine"
             data-aos-delay="1000"
           >
-            <span>文 字 와〮 서 르 ᄉᆞ ᄆᆞᆺ 디〮</span>
-            <span> 아 니〮 ᄒᆞᆯ ᄊᆡ〮</span>
+            <span>문자와서로사맛디</span>
+            <span>아니할세</span>
+            <br />
+            <br />
           </div>
           <br />
           <br />
@@ -43,15 +47,26 @@ export default function Page2() {
             data-aos-easing="ease-in-sine"
             data-aos-delay="2000"
           >
-            ...?
+            <img className="jjum" src={jjum} alt="jjum" width="70px" />
+            <br />
+            <br />
+            <img className="jjum" src={jjum} alt="jjum" width="70px" />
+            <br />
+            <br />
+            <img className="jjum" src={jjum} alt="jjum" width="70px" />
           </div>
-          <br />
           <br />
         </div>
         <br />
-        <br />
-        <img className="cat_photo" alt="cute cat" src={cat} />
+        <div
+          data-aos="fade-in"
+          data-aos-offset="5"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="3000"
+        >
+          <img className="gamagi" alt="gamagi" src={gamagi} width="500px" />
+        </div>
       </div>
     </>
-  );
+  )
 }

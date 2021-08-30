@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import AOS from "aos";
-import sejong from "./sejong.jpeg";
-import "../Page1/aos.css";
-import "./Page3.css";
-import Q1 from "./Q1";
+import React, { useEffect } from "react"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import AOS from "aos"
+import sejong from "./sejong.png"
+import "../Page1/aos.css"
+import "./Page3.css"
+import Q1 from "./Q1"
 
 export default function Page3() {
   useEffect(() => {
-    AOS.init();
-  }, []);
+    AOS.init()
+  }, [])
   return (
     <div>
       <div
@@ -19,7 +19,6 @@ export default function Page3() {
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
       >
-        <h2> 나에 대해 맞춰 보라굿!</h2>
         <img
           className="sejong_photo"
           data-aos="fade-up"
@@ -29,6 +28,7 @@ export default function Page3() {
           alt="sejong"
           src={sejong}
         />
+        <span className="cele">한글날 기념</span>
       </div>
       <div
         className="Sejong"
@@ -48,5 +48,5 @@ export default function Page3() {
         </Router>
       </div>
     </div>
-  );
+  )
 }

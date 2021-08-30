@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "./aos.css";
-import "./Page1.css";
+import React, { useEffect } from "react"
+import AOS from "aos"
+import "./aos.css"
+import "./Page1.css"
 
 const Page1 = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-    });
-  });
+    })
+  })
   return (
     <>
       <div className="container">
@@ -77,9 +77,17 @@ const Page1 = () => {
         >
           <div className="greeting__sawa">สวัสดีครับ</div>
         </div>
+        <div
+          data-aos="fade-in"
+          data-aos-offset="5"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2000"
+        >
+          <button type="button">다음으로</button>
+        </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Page1;
+export default Page1

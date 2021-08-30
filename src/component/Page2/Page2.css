@@ -1,11 +1,12 @@
 .Page2_text {
-  font-size: 5vw;
-  font-style:bold;
-  //writing-mode: vertical-lr;
-  text-align:center;
+  font-size: 50px;
+  font-style: bold;
+  writing-mode: vertical-lr;
+  text-align: center;
+  justify-content: center;
+  position: relative;
 }
 
-.cat_photo {
-  height: 150px;
-  width: 150px;
+.jjum {
+  display: inline-block flex;
 }
