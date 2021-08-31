@@ -93,7 +93,7 @@ const Page1 = () => {
 
 function Home() {
   function handleClick(e) {
-    window.location.replace("/Page2")
+    window.location.replace("Page4/component/page4.jsx")
   }
   return (
     <button type="button" onClick={handleClick}>
