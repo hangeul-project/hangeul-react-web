@@ -21,7 +21,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .outer-container-page4 {
   font-family: Jaemin;
   background-image: url(../../img/background.png);
@@ -108,21 +107,74 @@
   bottom: 13px;
 }
 
+button {
+  font-family: Jaemin;
+  border-radius: 5px;
+  background: #303f9f;
+  color: #fff;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+button:hover {
+  background: #fff;
+  color: #303f9f;
+  border-radius: 5px;
+}
+
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #303f9f;
+  transition: 400ms ease all;
+  border-radius: 5px;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+  border-radius: 5px;
+}
+
 .choice {
   display: inline-block flex;
+  position: relative;
+  top: 205px;
+  right: 70px;
 }
 .choice__first {
   display: inline;
   float: right;
   padding: 5px;
+  margin: 2px;
 }
+
 .choice__second {
   display: inline;
   float: right;
   padding: 5px;
+  margin: 2px;
 }
 .choice__third {
   display: inline;
   float: right;
   padding: 5px;
+  margin: 2px;
 }
