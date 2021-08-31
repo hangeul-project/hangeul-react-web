@@ -2,59 +2,57 @@
   background-color: #292929;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  border: 2px solid white;
-  padding: 50px;
-  margin: 25px;
   color: white;
   height: 100vh;
   width: auto;
   height: auto;
+  text-align: center;
 }
 
 .you {
-  margin-top: 60px;
-  margin-left: 15px;
   font-size: 70px;
   color: white;
-  width: 40vh;
+  width: 50vh;
+  text-align: left;
+}
+
+.youris {
+  display: flex;
+}
+
+.char {
+  width: 400px;
+  height: 500px;
 }
 
 .you__char {
-  display: inline-block;
   border: 2px solid goldenrod;
+  display: flex;
+  flex-direction: row;
   padding: 50px;
   margin: 40px;
   width: auto;
   margin-top: 30px;
   margin-left: 50px;
-  float: right;
-  display: flex; /* inline block에 대한 문제점 해결 */
   align-items: center;
   justify-content: center;
   height: 330px;
   text-align: center;
 }
 
-.char {
-  margin-left: 50px;
-  margin-top: 30px;
-  display: inline;
-  width: 40vh;
-  height: 50vh;
+.char__name {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  width: 450px;
 }
 
-.char__name {
-  margin-top: 0px;
-  margin-left: 75px;
-  color: white;
-  font-size: 40px;
-  display: block;
-  width: 33%;
-  text-align: center;
-}
 .choice {
   display: inline-block flex;
 }
