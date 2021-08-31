@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "./aos.css";
-import "./Page1.css";
+import React, { useEffect } from "react"
+import AOS from "aos"
+import "./aos.css"
+import "./Page1.css"
 
 const Page1 = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-    });
-  });
+    })
+  })
   return (
     <div className="outer-container">
       <div className="container">
@@ -89,7 +89,7 @@ const Page1 = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Page1;
+export default Page1
