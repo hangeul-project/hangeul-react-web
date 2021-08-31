@@ -1,7 +1,11 @@
 .quiz-container-outer {
-    margin: 1rem auto;
-    padding: 2rem;
-    max-width: 750px;
-    border-style: dashed;
-    border-color: grey;
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 750px;
+  border-style: dashed;
+  border-color: grey;
+}
+
+.check-quiz-result-button {
+  /* TODO : style this later */
 }

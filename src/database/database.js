@@ -9,7 +9,7 @@ const QUIZ_ANSWER_RATE = "quiz_answer_rate";
  * @param {Number} numQuestion Number of the question to update
  * @param {Number} selectedAnswerNum Number of the answer to update
  */
-function updateChosenAnswer(numQuestion, selectedAnswerNum) {
+export function updateChosenAnswer(numQuestion, selectedAnswerNum) {
   // 0, 1, 2
   const question = `q${numQuestion}`;
   const updates = {};
@@ -43,7 +43,7 @@ function calculateAnswerRate(answerArr) {
  * @param {function} onFailed Callback function to execute when this operation fails.
  *                            receives `error` as parameter.
  */
-function getAnswerRate(numQuestion, onSuccess, onFailed) {
+export function getAnswerRate(numQuestion, onSuccess, onFailed) {
   const q = `q${numQuestion}`;
   database
     .ref()

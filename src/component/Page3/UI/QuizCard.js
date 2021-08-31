@@ -1,23 +1,31 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import "./QuizCard.css";
+import AnswerButton from "./AnswerButton";
 
-const QuizCard = ({ question, answerArray, currentQuizId, onAnswerClick }) => {
+const QuizCard = ({
+  question,
+  answerArray,
+  currentQuizId,
+  onAnswerClick,
+  hasBeenSolved,
+}) => {
   return (
     <div className="quiz-card-outer-container" id={currentQuizId}>
       <h4>Question : {question}</h4>
-      <br />
-      <div>
+      <form>
         {answerArray.map((item, idx) => {
           return (
-            <div key={item.answer} className="answer-item">
-              {idx}. {item.answer}
-              {/* TODO : Update this part with radio button */}
-              {item.isCorrect && <span> ❤️정답❤️</span>}
-            </div>
+            <AnswerButton
+              key={item.answer}
+              answerId={idx}
+              answerText={`${item.answer}`}
+              onSelectionChange={onAnswerClick}
+              hasBeenSolved={hasBeenSolved}
+            />
           );
         })}
-      </div>
+      </form>
     </div>
   );
 };
@@ -26,12 +34,13 @@ QuizCard.propTypes = {
   question: PropTypes.string.isRequired,
   answerArray: PropTypes.arrayOf(
     PropTypes.shape({
-      content: PropTypes.string.isRequired,
+      answer: PropTypes.string.isRequired,
       isCorrect: PropTypes.bool.isRequired,
     })
   ).isRequired,
   currentQuizId: PropTypes.number.isRequired,
   onAnswerClick: PropTypes.func.isRequired,
+  hasBeenSolved: PropTypes.bool.isRequired,
 };
 
 export default QuizCard;

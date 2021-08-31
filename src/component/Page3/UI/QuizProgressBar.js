@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import "./QuizProgressBar.css";
 
 const update = (progress) => {
-  const innerBox = document.getElementById("dynamicProgressDiv");
-  innerBox.style.width = `${progress * 10}%`;
+  const progressIndicator = document.getElementById("dynamic-progress-div");
+  progressIndicator.style.width = `${progress * 10}%`;
 };
 
 const QuizProgressBar = ({ progress }) => {
@@ -15,7 +15,7 @@ const QuizProgressBar = ({ progress }) => {
     <div className="progress-bar-container">
       <p>Progress {progress}</p>
       <div className="progress-background-box">
-        <div className="progress-inner-box" id="dynamicProgressDiv" />
+        <div className="progress-inner-box" id="dynamic-progress-div" />
       </div>
     </div>
   );
