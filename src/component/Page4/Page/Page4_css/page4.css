@@ -1,10 +1,38 @@
+@font-face {
+  font-family: "Jaemin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jaemin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KoPubDotumMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IM_Hyemin-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .outer-container-page4 {
-  background-color: #292929;
+  font-family: Jaemin;
+  background-image: url(../../img/background.png);
+  background-attachment: fixed;
+  background-position: top;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 .container {
@@ -31,7 +59,18 @@
   height: 500px;
 }
 
-.you__char {
+.text {
+  width: 800px;
+  height: 450px;
+  position: relative;
+}
+.textback {
+  width: 800px;
+  height: 450px;
+  position: relative;
+  top: 100px;
+}
+/* .you__char {
   border: 2px solid goldenrod;
   display: flex;
   flex-direction: row;
@@ -44,13 +83,29 @@
   justify-content: center;
   height: 330px;
   text-align: center;
+} */
+
+.description {
+  color: #292929;
+  font-size: 35px;
+  width: 800px;
+  height: 400px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -200px;
 }
 
 .char__name {
+  font-family: IM_Hyemin-Bold;
   color: white;
   font-size: 30px;
   text-align: center;
-  width: 450px;
+  width: 200px;
+  border: goldenrod solid;
+  border-radius: 10px;
+  position: relative;
+  left: 70px;
+  bottom: 13px;
 }
 
 .choice {
@@ -70,8 +125,4 @@
   display: inline;
   float: right;
   padding: 5px;
-}
-
-.description {
-  font-size: 25px;
 }
