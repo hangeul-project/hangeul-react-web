@@ -79,7 +79,7 @@
   }
 }
 @media (max-width: 440px) {
-  body {
+  .outer-container {
     color: white;
     background-color: black;
     position: relative;
