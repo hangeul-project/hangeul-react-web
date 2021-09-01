@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "./Page2.css";
 import "../Page1/aos.css";
-import cat from "./cat.jpeg";
+import gamagi from "./gamagi.png";
+import jjum from "./jjum.png";
 
 export default function Page2() {
   useEffect(() => {
@@ -47,7 +48,6 @@ export default function Page2() {
         </div>
         <br />
         <br />
-        <br />
         <div
           data-aos="fade-in"
           data-aos-offset="350"
@@ -55,7 +55,8 @@ export default function Page2() {
           data-aos-duration="3000"
           data-aos-delay="1000"
         >
-          .
+          {" "}
+          <img className="jjum" alt="jjum" src={jjum} width="70px" />
         </div>
         <br />
         <br />
@@ -66,7 +67,7 @@ export default function Page2() {
           data-aos-duration="3000"
           data-aos-delay="2000"
         >
-          .
+          <img className="jjum" alt="jjum" src={jjum} width="70px" />
         </div>
         <br />
         <div
@@ -77,10 +78,9 @@ export default function Page2() {
           data-aos-duration="3000"
           data-aos-delay="3000"
         >
-          🕊
+          <img className="gamagi" alt="gamagi" src={gamagi} width="400px" />
         </div>
       </div>
-      <img className="cat_photo" alt="cute cat" src={cat} />
     </>
   );
 }
