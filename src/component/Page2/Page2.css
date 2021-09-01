@@ -1,7 +1,8 @@
+@media(max-width:440px){
 .Page2_text {
   margin-top:30vh;
   margin-bottom:20vh;
-  font-size: 2.8vw;
+  font-size: 4vw;
   font-style:bold;
   text-align:center;
   writing-mode: vertical-lr;
@@ -16,3 +17,45 @@
 .crow{
   font-size:15vw;
 }
+}
+@media(min-width:441px) and (max-width:1023px){
+  .Page2_text {
+    margin-left:12vw;
+    margin-bottom:20vh;
+    font-size: 3vw;
+    font-style:bold;
+    text-align:center;
+    writing-mode: vertical-lr;
+    height:120vh;
+    word-spacing:1vw;
+    letter-spacing:1vw;
+  }
+  .cat_photo {
+    height: 150px;
+    width: 150px;
+  }
+  .crow{
+    font-size:15vw;
+  }
+  }
+  @media(min-width:1024px){
+    .Page2_text {
+      margin-top:20vw;
+      margin-left:12vw;
+      margin-bottom:20vh;
+      font-size: 3vw;
+      font-style:bold;
+      text-align:center;
+      writing-mode: vertical-lr;
+      height:120vh;
+      word-spacing:1vw;
+      letter-spacing:1vw;
+    }
+    .cat_photo {
+      height: 150px;
+      width: 150px;
+    }
+    .crow{
+      font-size:15vw;
+    }
+    }

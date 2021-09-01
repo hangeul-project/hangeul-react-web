@@ -13,25 +13,24 @@ export default function Page2() {
     <>
       <div className="Page2_text">
         <br />
-        <br />
-        <br />
-        <br />
         <div
           data-aos="fade-in"
           data-aos-offset="1"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
           data-aos-delay="100"
+          data-aos-anchor-placement="top-bottom"
         >
           나랏말싸미 듕귁에달아
         </div>
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="100"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
-          data-aos-delay="500"
+          data-aos-delay="100"
+          data-aos-anchor-placement="top-center"
         >
           문자와로 서로
         </div>
@@ -41,7 +40,8 @@ export default function Page2() {
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
-          data-aos-delay="1000"
+          data-aos-delay="500"
+          data-aos-anchor-placement="top-center"
         >
           사맛디 아니할쎄
         </div>
@@ -50,10 +50,10 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="500"
+          data-aos-offset="350"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
-          data-aos-delay="1500"
+          data-aos-delay="1000"
         >
           .
         </div>
@@ -61,7 +61,7 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="700"
+          data-aos-offset="400"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
           data-aos-delay="2000"
@@ -69,14 +69,13 @@ export default function Page2() {
           .
         </div>
         <br />
-        <br />
         <div
           className="crow"
           data-aos="fade-in"
-          data-aos-offset="800"
+          data-aos-offset="450"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
-          data-aos-delay="2500"
+          data-aos-delay="3000"
         >
           🕊
         </div>

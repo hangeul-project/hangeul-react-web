@@ -88,9 +88,11 @@ const Page1 = () => {
           data-aos-delay="2500"
         >
           <Router>
-            <Link to="Page2">다음으로</Link>
             <Switch>
-              <Route path="/Page2" component={Page2} />
+              <Link to="/Page2">다음으로</Link>
+              <Route path="/Page2" component={Page2}>
+                <Page2 />
+              </Route>
             </Switch>
           </Router>
         </span>
