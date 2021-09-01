@@ -52,8 +52,9 @@ export default function Page2() {
           data-aos="fade-in"
           data-aos-offset="350"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
           data-aos-delay="1000"
+          data-aos-anchor-placement="top-center"
         >
           {" "}
           <img className="jjum" alt="jjum" src={jjum} width="70px" />
@@ -64,8 +65,21 @@ export default function Page2() {
           data-aos="fade-in"
           data-aos-offset="400"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
           data-aos-delay="2000"
+          data-aos-anchor-placement="top-center"
+        >
+          <img className="jjum" alt="jjum" src={jjum} width="70px" />
+        </div>
+        <br />
+        <br />
+        <div
+          data-aos="fade-in"
+          data-aos-offset="400"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2000"
+          data-aos-delay="2000"
+          data-aos-anchor-placement="top-center"
         >
           <img className="jjum" alt="jjum" src={jjum} width="70px" />
         </div>
@@ -75,8 +89,9 @@ export default function Page2() {
           data-aos="fade-in"
           data-aos-offset="450"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
           data-aos-delay="3000"
+          data-aos-anchor-placement="top-center"
         >
           <img className="gamagi" alt="gamagi" src={gamagi} width="400px" />
         </div>
