@@ -1,16 +1,16 @@
-import React, { useEffect } from "react"
-import AOS from "aos"
-import "./aos.css"
-import "./Page1.css"
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "./aos.css";
+import "./Page1.css";
 
 const Page1 = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-    })
-  })
+    });
+  });
   return (
-    <>
+    <div className="outer-container">
       <div className="container">
         <div
           className="greeting__first"
@@ -65,8 +65,8 @@ const Page1 = () => {
           data-aos-easing="ease-in-sine"
           data-aos-duration="8000"
         >
-          <div className="greeting__hola">¡Hola</div>
-          <div className="greeting__goni">こんにちは</div>
+          <div className="greeting__hola page1-button">¡Hola</div>
+          <div className="greeting__goni page1-button">こんにちは</div>
         </div>
         <div
           className="greeting__fifth"
@@ -75,7 +75,7 @@ const Page1 = () => {
           data-aos-easing="ease-in-sine"
           data-aos-duration="4000"
         >
-          <div className="greeting__sawa">สวัสดีครับ</div>
+          <div className="greeting__sawa page1-button">สวัสดีครับ</div>
         </div>
         <div
           data-aos="fade-in"
@@ -83,11 +83,13 @@ const Page1 = () => {
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
         >
-          <button type="button">다음으로</button>
+          <button type="button" className="page1-button">
+            다음으로
+          </button>
         </div>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Page1
+export default Page1;

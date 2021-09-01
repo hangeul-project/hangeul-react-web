@@ -1,6 +1,7 @@
-body {
+.outer-container-page4 {
   background-color: black;
 }
+
 .container {
   border: 2px solid white;
   padding: 50px;

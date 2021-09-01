@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "question": "세종대왕의 탄신일은 다음 국가기념일의 날짜와 동일하다.",
+    "options": [
+      {
+        "answer": "한글날",
+        "isCorrect": false
+      },
+      {
+        "answer": "스승의 날",
+        "isCorrect": true
+      },
+      {
+        "answer": "과학의 날",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "우리나라 문화와 교육발전에 남긴 업적이 가장 큰 세종대왕 탄생일을 스승의 날로 지정하게 되었다.",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 2,
+    "question": "대한민국의 ‘한’자와 한글의 ‘한’자는 동일한 한자를 사용한다.",
+    "options": [
+      {
+        "answer": "O",
+        "isCorrect": true
+      },
+      {
+        "answer": "X",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "최근 고영근(2003)에서는 한글이라는 말은 지은 사람은 주시경 선생으로, ’한’이 직접적으로 당시의 ‘조선(朝鮮)’에 대응하고, 이전의 ‘대한제국(大韓帝國)’의 ‘한’을 한글로 옮긴 것으로 보고 있다.",
+    "hasMoreExplanation": true
+  },
+  {
+    "id": 3,
+    "question": "한글은 모든 소리를 표현하지 못한다.",
+    "options": [
+      {
+        "answer": "O",
+        "isCorrect": false
+      },
+      {
+        "answer": "X",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "X",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 4,
+    "question": "한글의 로마자 표기법은 hangeul,  영어로는 ___ 이다.",
+    "options": [
+      {
+        "answer": "Hangul",
+        "isCorrect": false
+      },
+      {
+        "answer": "Hangeul",
+        "isCorrect": true
+      },
+      {
+        "answer": "Hangol",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "한글은 영어로 hangul, 로마자 표기법에 따르면 hangeul이다.",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 5,
+    "question": "다음 과일 중 순우리말인 것은?",
+    "options": [
+      {
+        "answer": "수박",
+        "isCorrect": true
+      },
+      {
+        "answer": "귤",
+        "isCorrect": false
+      },
+      {
+        "answer": "사과",
+        "isCorrect": false
+      },
+      {
+        "answer": "석류",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "수박. 귤, 사과, 석류 모두 한자를 사용한 단어로 수박만이 순우리말이다.",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 6,
+    "question": "다음 중 올바른 표준어는?",
+    "options": [
+      {
+        "answer": "공깃밥",
+        "isCorrect": true
+      },
+      {
+        "answer": "순대국",
+        "isCorrect": false
+      },
+      {
+        "answer": "쭈꾸미",
+        "isCorrect": false
+      },
+      {
+        "answer": "고기집",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "1번이 올바른 표준어로, 주꾸미, 순댓국, 고깃집이 맞는 표준어이다.",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 7,
+    "question": "다음 맞춤법이 올바른 문장은?",
+    "options": [
+      {
+        "answer": "난 지금 너무 배고파서 눈에 봬는 게 없다.",
+        "isCorrect": false
+      },
+      {
+        "answer": "오늘은 웬지 놀고 싶다.",
+        "isCorrect": false
+      },
+      {
+        "answer": "이번엔 네가 꼭 이기길 바라.",
+        "isCorrect": true
+      },
+      {
+        "answer": "네가 그러던 말던 상관 안 한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "3번. 눈에 뵈는 게 없다, 왠지 놀고 싶다, 그러든 말든이 올바른 표현이다.",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 8,
+    "question": "다음 순우리말 중 뜻과 연결이 잘 못 된 단어는?",
+    "options": [
+      {
+        "answer": "나비잠: 갓난아이가 두 팔을 위로 벌리고 자는 잠",
+        "isCorrect": false
+      },
+      {
+        "answer": "미쁘다: 믿음직스럽다",
+        "isCorrect": false
+      },
+      {
+        "answer": "도담도담: 어린아이가 무탈하게 잘 자란다",
+        "isCorrect": false
+      },
+      {
+        "answer": "미리내: 숲 속에 있는 작은 냇가",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "4번, 미리내는 은하수를 뜻하는 순우리말이다.",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 9,
+    "question": "다음 띄어쓰기가 올바르지 않은 문장은?",
+    "options": [
+      {
+        "answer": "현수는 칠칠 맞지 못하게 준비물을 빠뜨렸다.",
+        "isCorrect": true
+      },
+      {
+        "answer": "장학금은커녕 낙제만 안 하면 다행이다.",
+        "isCorrect": false
+      },
+      {
+        "answer": "야채는 그만큼이면 충분하다.",
+        "isCorrect": false
+      },
+      {
+        "answer": "이 일은 나와 너밖에 모른다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "1번. 칠칠맞지 못하게 라고 써야 한다.",
+    "hasMoreExplanation": false
+  },
+  {
+    "id": 10,
+    "question": "신문의 날인 4월 7일은 ‘이 신문’의 창간일로, ‘이 신문’은 우리나라 최초의 한글신문이었다. 주시경이 국문판 편집과 제작을 담당하였던 ‘이 신문’은 어느 신문인가?",
+    "options": [
+      {
+        "answer": "한성순보",
+        "isCorrect": false
+      },
+      {
+        "answer": "독립신문",
+        "isCorrect": true
+      },
+      {
+        "answer": "대한매일순보",
+        "isCorrect": false
+      },
+      {
+        "answer": "황성신문",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "2번",
+    "hasMoreExplanation": false
+  }
+]

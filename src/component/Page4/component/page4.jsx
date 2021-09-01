@@ -1,10 +1,10 @@
 import React from "react";
-import "../page4.css";
+import "../Page/Page4_css/page4.css";
 import charA from "./img.png";
 
 function Page4() {
   return (
-    <>
+    <div className="outer-container-page4">
       <div className="container">
         <div className="you">당신은...</div>
         <img
@@ -32,7 +32,7 @@ function Page4() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

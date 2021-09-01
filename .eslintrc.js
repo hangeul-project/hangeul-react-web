@@ -23,5 +23,7 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
+    "no-unused-vars": "off",
+    "no-console": "off",
   },
 };

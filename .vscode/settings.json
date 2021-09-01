@@ -2,5 +2,7 @@
     "prettier.singleQuote": false,
     "javascript.preferences.quoteStyle": "double",
     "prettier.jsxSingleQuote": false,
-    "editor.formatOnSave": true, 
+    "cSpell.words": [
+        "browserslist"
+    ],
 }
