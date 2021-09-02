@@ -26,9 +26,7 @@ function Page4() {
         <a href="http://www.google.com">내부바3</a>
       </div>
       <div className="container">
-        <div className="text">
-          <img className="textback" src={textback} alt="textback" />
-        </div>
+        <img className="textback" src={textback} alt="textback" />
         <div className="your">
           <div className="youris">당신은 언어의 대가, 사신 유씨!</div>
           <div className="description">
@@ -49,7 +47,7 @@ function Page4() {
           </div>
         </div>
         <img className="char" src={charA} alt="캐릭터" />
-        <ChoiceBtn />
+        {/* <ChoiceBtn /> */}
       </div>
     </div>
   );
