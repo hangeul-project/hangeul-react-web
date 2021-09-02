@@ -1,5 +1,5 @@
 import React from "react";
-import "../Page/Page4_css/Page4.css";
+import "../Page/Page4_css/page4.css";
 import charA from "../img/img.png";
 import textback from "../img/text_back.png";
 
