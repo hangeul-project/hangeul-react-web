@@ -2,7 +2,7 @@ import React from "react";
 import "../Page/Page4_css/Page4s.css";
 import charA from "./img.png";
 
-function page4s() {
+function Page4s() {
   return (
     <>
       <div className="container">
@@ -36,4 +36,4 @@ function page4s() {
   );
 }
 
-export default page4s;
+export default Page4s;
