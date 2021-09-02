@@ -44,8 +44,8 @@ li {
   background-attachment: fixed;
   background-position: top;
   height: 100vh;
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div.navbar__container {
@@ -120,32 +120,32 @@ div.brackets a:hover:after {
 }
 
 .textback {
-  width: 800px;
-  height: 800px;
+  width: 95vw;
+  height: 90vh;
   position: fixed;
   top: 12vh;
-  right: 10vw;
-  left:10vw;
+  right: 5vw;
 }
 
 .youris {
   height: 90vh;
   color: #292929;
-  font-size: 50px;
+  font-size: 8vh;
   font-weight: bolder;
   position: fixed;
-  top: 25vh;
-  left:16vw;
+  left: 16vw;
+  z-index: 3;
+  top: 250px;
 }
 
 .description {
   color: #292929;
-  font-size: 30px;
-  position: fixed;
-  margin-left:17vw;
-  margin-right:30vw;
-  bottom: 200px;
+  font-size: 3vh;
   font-weight: bold;
+  z-index: 3;
+  top: 400px;
+  left: 270px;
+  position: fixed;
 }
 
 button {
@@ -196,9 +196,9 @@ button:hover:after {
 
 .choice {
   display: inline-block flex;
-  position: relative;
-  top: 257px;
-  right: 615px;
+  position: fixed;
+  left: 550px;
+  bottom: 1.2rem;
 }
 .choice__first {
   display: inline;

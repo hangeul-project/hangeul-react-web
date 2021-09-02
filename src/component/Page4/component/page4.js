@@ -47,7 +47,7 @@ function Page4() {
           </div>
         </div>
         <img className="char" src={charA} alt="캐릭터" />
-        {/* <ChoiceBtn /> */}
+        <ChoiceBtn />
       </div>
     </div>
   );
