@@ -12,7 +12,7 @@ export default function App() {
         {/* <PageScroll /> */}
         {/* <Page3 /> */}
         {/* TODO: Uncomment this for checking only Page3 */}
-        <Page4></Page4>
+        <Page4 />
       </div>
     </>
   );
