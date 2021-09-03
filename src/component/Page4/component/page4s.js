@@ -1,39 +1,47 @@
 import React from "react";
 import "../Page/Page4_css/page4s.css";
-import charA from "./img.png";
+import charA from "../img/img.png";
 
-function Page4s() {
+const ChoiceBtn = () => (
+  <div className="choice">
+    <button type="button" className="choice__first">
+      끝내겠소
+    </button>
+    <button type="button" className="choice__second">
+      기부하겠소
+    </button>
+    <button type="button" className="choice__third">
+      공유하겠소
+    </button>
+  </div>
+);
+
+const Page4s = () => {
   return (
     <>
-      <div className="container">
-        <div className="youris">당신은...</div>
-        <div className="content__left">
-          <div className="content">
-            <img
-              className="char"
-              src={charA}
-              width="400"
-              height="auto"
-              alt="캐릭터"
-            />
-            <div className="name">한글나라 아이돌 김씨소년단</div>
-          </div>
-          <div className="content__right">
-            <div className="where">어디로 공유하시겠소?</div>
-            <div className="btn__social">
-              <button type="button">카카오톡</button>
-              <button type="button">페이스북</button>
-              <button type="button">트위터</button>
-              <button type="button">인스타그램</button>
-            </div>
-            <div className="btn">
-              <button type="button">끝내겠소</button>
-            </div>
-          </div>
+      <div className="navbar__container brackets">
+        <a href="http://www.naver.com">내부바1</a>
+        <a href="http://portal.hanyang.ac.kr">내부바2</a>
+        <a href="http://www.google.com">내부바3</a>
+      </div>
+      <div className="outer-container-page4">
+        <div className="grid__container">
+          <div className="item1">어디에 공유하겠소?</div>
+          <div className="item2">카카오톡</div>
+          <div className="item3" />
+          <div className="item4">인스타그램</div>
+          <div className="item5">페이스북</div>
+          <div className="item3" />
+          <div className="item6">트위터</div>
+          <div className="item3" />
+          <div className="item3" />
+        </div>
+        <div className="char__img">
+          <img className="char" src={charA} alt="캐릭터" />
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Page4s;
