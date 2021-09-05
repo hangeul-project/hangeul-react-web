@@ -99,14 +99,6 @@ div.brackets a:hover:after {
   transform: translateX(0px);
 }
 
-.navbar__menu__item {
-  padding: 15px;
-  color: white;
-  cursor: pointer;
-  font-family: Jaemin;
-  font-size: 20px;
-  font-weight: bolder;
-}
 .your {
   width: 1050px;
   height: 800px;
