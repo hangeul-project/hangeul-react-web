@@ -1,6 +1,7 @@
 import React from "react";
 import "../Page/Page4_css/page4s.css";
 import charA from "../img/img.png";
+import kakao from "../img/kakao.png";
 
 const ChoiceBtn = () => (
   <div className="choice">
@@ -27,7 +28,10 @@ const Page4s = () => {
       <div className="outer-container-page4">
         <div className="grid__container">
           <div className="item1">어디에 공유하겠소?</div>
-          <div className="item2">카카오톡</div>
+          <div className="item2">
+            카카오톡
+            <img src={kakao} alt="kakao" className="kakao" />
+          </div>
           <div className="item3" />
           <div className="item4">인스타그램</div>
           <div className="item5">페이스북</div>
