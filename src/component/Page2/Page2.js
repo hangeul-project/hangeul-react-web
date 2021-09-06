@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "./Page2.css";
 import "../Page1/aos.css";
-import gamagi from "./gamagi.png";
-import jjum from "./jjum.png";
+import jjum from "./pg2_img/jjum.png";
+import gamagi from "./pg2_img/gamagi.png";
 
 export default function Page2() {
   useEffect(() => {

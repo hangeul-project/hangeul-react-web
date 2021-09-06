@@ -11,7 +11,6 @@ const Page1 = () => {
       duration: 1000,
     });
   });
-
   return (
     <>
       <div className="container">
@@ -68,8 +67,8 @@ const Page1 = () => {
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
         >
-          <div className="greeting__hola">¡Hola</div>
-          <div className="greeting__goni">こんにちは</div>
+          <div className="greeting__hola page1-button">¡Hola</div>
+          <div className="greeting__goni page1-button">こんにちは</div>
         </div>
         <span
           className="greeting__fifth"
