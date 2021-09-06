@@ -14,22 +14,11 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  settings: {
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-      },
-    },
-  },
   plugins: ["react"],
   rules: {
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
-    "prettier/prettier": [
-      "error",
-      {
-        endOfLine: "auto",
-      },
-      { "no-console": "off" },
-    ],
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
+    "no-unused-vars": "off",
+    "no-console": "off",
   },
 };

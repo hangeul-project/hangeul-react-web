@@ -61,7 +61,7 @@ const QuizContainer = (props) => {
     userSelectedAnswerMap.set(solvedQuizCount + 1, selectedAnswerId);
   };
 
-  const onQuizFinished = () => {
+  const onQuizFinished = (event) => {
     // eslint-disable-next-line
     console.debug(userSelectedAnswerMap);
     userSelectedAnswerMap.forEach((value, key) => {

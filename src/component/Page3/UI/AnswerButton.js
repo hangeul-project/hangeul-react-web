@@ -5,7 +5,12 @@ import PropTypes from "prop-types";
 // FIXME : This component has a bug!
 // if one selects an answer in quiz number2, the radio button
 // keeps the checked state of it self even in quiz number 3.
-const AnswerButton = ({ answerId, answerText, onSelectionChange }) => {
+const AnswerButton = ({
+  answerId,
+  answerText,
+  onSelectionChange,
+  hasBeenSolved,
+}) => {
   return (
     <div className="answer-button-container">
       <input
@@ -28,6 +33,7 @@ AnswerButton.propTypes = {
   answerId: PropTypes.number.isRequired,
   answerText: PropTypes.string.isRequired,
   onSelectionChange: PropTypes.func.isRequired,
+  hasBeenSolved: PropTypes.bool.isRequired,
 };
 
 export default AnswerButton;
