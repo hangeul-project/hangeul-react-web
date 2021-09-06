@@ -11,6 +11,7 @@ const Page1 = () => {
       duration: 1000,
     });
   });
+
   return (
     <>
       <div className="container">

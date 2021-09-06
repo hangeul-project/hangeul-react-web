@@ -58,3 +58,7 @@
 .jjum {
   display: inline-block flex;
 }
+
+.gamagi {
+  overflow: hidden;
+}
