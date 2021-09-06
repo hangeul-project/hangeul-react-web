@@ -10,9 +10,8 @@ export default function App() {
   return (
     <>
       <div>
-        {/* <PageScroll /> */}
-        <Page3 />
-        {/* TODO: Uncomment this for checking only Page3 */}
+        <PageScroll />
+        {/* page4 확인용 */}
         {/* <Page4 /> */}
       </div>
     </>

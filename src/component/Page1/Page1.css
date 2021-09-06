@@ -6,19 +6,19 @@
     right: 3vw;
   }
 
-  .page1-button {
+  /* .page1-button {
     height: 20px;
     width: 70px;
     margin: -20px -50px;
     position: relative;
     top: 50%;
     left: 100%;
-  }
+  } */
 
-  .container {
-    padding-top: 1vh;
-    width: 100%;
-    height: 100%;
+  .outer-container {
+    background-color: #292929;
+    width: 100vw;
+    height: 100vh;
     display: block;
   }
 
@@ -87,8 +87,8 @@
   }
   .container {
     padding-top: 1vh;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: block;
     margin: auto;
     padding-top: 25vh;
@@ -150,7 +150,7 @@
     margin-left: 40vw;
   }
 
-  .next {
+  /* .next {
     text-align: right;
-  }
+  } */
 }

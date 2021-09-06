@@ -14,9 +14,9 @@
   font-style: normal;
 }
 
-body {
+/* body {
   overflow: hidden;
-}
+} */
 .outer-container-page3 {
   background-image: url(../Page4/img/background.png);
   background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
   width: 400px;
   height: 100px;
   font-size: 2.5vw;
-  position: fixed;
+  position: sticky;
   z-index: 3;
   bottom: 600px;
   left: 250px;
@@ -85,6 +85,10 @@ div.navbar_container {
   right: -0.5rem;
 }
 
+div.navbar_container {
+  width: 100%;
+}
+
 div.navbar_container a {
   color: #fff;
   text-decoration: none;
@@ -124,14 +128,14 @@ div.brackets a:hover:after {
   transform: translateX(0px);
 }
 
-.text1 {
+.textFirstPrize {
   width: 60vw;
   font-size: 6vw;
   font-weight: bold;
   text-align: right;
 }
 
-.text2 {
+.textSejongTest {
   text-align: right;
   width: 60vw;
   font-size: 2.5vw;

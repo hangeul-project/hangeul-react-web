@@ -7,7 +7,7 @@ import "./Scroll.css";
 
 export default function PageScroll() {
   return (
-    <div>
+    <div className="containerScroll">
       <ul className="mark">
         <li>
           <Scroll.Link
