@@ -1,16 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import sejong from "./img/sejong_1.png";
 import textback from "./img/text_back.png";
 import "../Page1/aos.css";
 import "./Page3.css";
 import QuizContainer from "./UI/QuizContainer";
+import StartQuizButton from "./UI/StartQuizButton";
 import HangeulQuizJson from "./hangeul-quiz.json";
 
 const Page3 = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  const [isQuizVisible, setIsQuizVisible] = useState(false);
+  const onStartClick = () => {
+    setIsQuizVisible(!isQuizVisible);
+  };
 
   return (
     <>
@@ -25,9 +30,14 @@ const Page3 = () => {
         <div className="sejong">
           <img src={sejong} alt="sejong" className="sejongimg" />
           <img src={textback} alt="textback" className="text_back" />
-          <div className="text__container">
-            <QuizContainer quizItem={HangeulQuizJson} />
-          </div>
+        </div>
+        <div className="quiz-outer-container">
+          <QuizContainer quizItem={HangeulQuizJson} isVisible={isQuizVisible} />
+          <StartQuizButton
+            buttonText="퀴즈 시작!"
+            onClickListener={onStartClick}
+            isVisible={!isQuizVisible}
+          />
         </div>
       </div>
     </>

@@ -59,6 +59,7 @@ const QuizContainer = (props) => {
 
   const onAnswerClick = (event, selectedAnswerId) => {
     userSelectedAnswerMap.set(solvedQuizCount + 1, selectedAnswerId);
+    console.log("clicked radio");
   };
 
   const onQuizFinished = (event) => {
@@ -70,7 +71,14 @@ const QuizContainer = (props) => {
   };
 
   return (
-    <div className="quiz-container-outer">
+    // Toggles visibility of quiz container
+    <div
+      className={
+        props.isVisible
+          ? "quiz-container-outer"
+          : "quiz-hidden quiz-container-outer"
+      }
+    >
       <QuizProgressBar progress={solvedQuizCount + 1} />
 
       {isContentLoaded && (

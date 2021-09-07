@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AnswerButton.css";
 import PropTypes from "prop-types";
 
 // FIXME : This component has a bug!
 // if one selects an answer in quiz number2, the radio button
 // keeps the checked state of it self even in quiz number 3.
+
 const AnswerButton = ({
   answerId,
   answerText,
@@ -12,7 +13,9 @@ const AnswerButton = ({
   hasBeenSolved,
 }) => {
   return (
-    <div className="answer-button-container">
+    // 'htmlFor' attribute in <label> tag is causing issue, deleted on purpose.
+    // eslint-disable-next-line jsx-a11y/label-has-associated-control
+    <label id={answerId} className="answer-button-label">
       <input
         type="radio"
         onChange={(event) => onSelectionChange(event, answerId)}
@@ -22,10 +25,8 @@ const AnswerButton = ({
         value={answerText}
         // checked={hasBeenSolved} FIXME : I have to figure out how to toggle this checked state!
       />
-      <label htmlFor="answer-text" id={answerId}>
-        {answerText}
-      </label>
-    </div>
+      {answerText}
+    </label>
   );
 };
 

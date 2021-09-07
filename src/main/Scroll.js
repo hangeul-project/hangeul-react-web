@@ -34,16 +34,18 @@ export default function PageScroll() {
           </Scroll.Link>
         </li>
         <li>
-          <Scroll.Link
+          {/* TODO : For some reason, this Link component is causing 
+          Quiz radio button to malfunction. Scroll animation needs some fix. */}
+          {/* <Scroll.Link
             activeClass="active"
             to="/"
             spy
             smooth
             offset={50}
             duration={500}
-          >
-            <Page3 />
-          </Scroll.Link>
+          > */}
+          <Page3 />
+          {/* </Scroll.Link> */}
         </li>
       </ul>
     </div>

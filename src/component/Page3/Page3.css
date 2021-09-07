@@ -140,3 +140,15 @@ div.brackets a:hover:after {
   width: 60vw;
   font-size: 2.5vw;
 }
+
+/* Quiz */
+.quiz-outer-container {
+  z-index: 6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* This border style is only for debugging purpose. Modify design later. */
+  border-style: dashed;
+  border-color: fuchsia; 
+  margin-left: 30%;
+}

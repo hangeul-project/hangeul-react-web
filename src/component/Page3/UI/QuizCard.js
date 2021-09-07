@@ -12,7 +12,7 @@ const QuizCard = ({
 }) => {
   return (
     <div className="quiz-card-outer-container" id={currentQuizId}>
-      <h4>Question : {question}</h4>
+      <h4 className="quiz-question-text">Question : {question}</h4>
       {answerArray.map((item, idx) => {
         return (
           <AnswerButton
