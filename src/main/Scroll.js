@@ -34,8 +34,10 @@ export default function PageScroll() {
           </Scroll.Link>
         </li>
         <li>
-          {/* TODO : For some reason, this Link component is causing 
-          Quiz radio button to malfunction. Scroll animation needs some fix. */}
+          {/* ====== CAUTION ======
+          For some reason, this Link component is causing 
+          Quiz radio button to malfunction. Scroll animation needs some fix. 
+          */}
           {/* <Scroll.Link
             activeClass="active"
             to="/"
