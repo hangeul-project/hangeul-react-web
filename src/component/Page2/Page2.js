@@ -3,7 +3,7 @@ import AOS from "aos";
 import "./Page2.css";
 import "../Page1/aos.css";
 import jjum from "./pg2_img/jjum.png";
-import gamagi from "./pg2_img/gamagi.png";
+import crow from "./pg2_img/crow.png";
 
 export default function Page2() {
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function Page2() {
 
   return (
     <>
-      <div className="Page2_text">
+      <div className="outer-container-page2">
         <br />
         <div
           data-aos="fade-in"
@@ -93,7 +93,7 @@ export default function Page2() {
           data-aos-delay="3000"
           data-aos-anchor-placement="top-center"
         >
-          <img className="gamagi" alt="gamagi" src={gamagi} width="400px" />
+          <img className="crow" alt="crow" src={crow} width="400px" />
         </div>
       </div>
     </>
