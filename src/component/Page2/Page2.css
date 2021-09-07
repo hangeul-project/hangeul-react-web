@@ -1,7 +1,7 @@
 @media (max-width:440px) {
   .Page2_text {
-    margin-left:2vw;
-    margin-right:1vw;
+    margin-left: 2vw;
+    margin-right: 1vw;
     margin-top: 10vh;
     margin-bottom: 20vh;
     font-size: 4vw;
@@ -10,12 +10,14 @@
     writing-mode: vertical-lr;
     height: 120vh;
     letter-spacing: 1vw;
-    word-spacing:1vw;
+    word-spacing: 1vw;
   }
-  .gamagi{
-    width:70px;
+
+  .gamagi {
+    width: 70px;
   }
-  .jjum{
+
+  .jjum {
     width: 15px;
   }
 }
@@ -32,11 +34,13 @@
     word-spacing: 1vw;
     letter-spacing: 1vw;
   }
-  .gamagi{
-    width:200px;
+
+  .gamagi {
+    width: 200px;
   }
-  .jjum{
-    width:40px;
+
+  .jjum {
+    width: 40px;
   }
 }
 
