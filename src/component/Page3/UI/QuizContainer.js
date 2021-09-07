@@ -20,6 +20,7 @@ const QuizContainer = (props) => {
   const getQuizContent = () => {
     let answers = [];
     props.quizItem.map((item) => {
+      // eslint-disable-next-line
       console.debug("=== loaded only once ? ===");
       quizContent.questionArr.push(item.question);
       item.options.map((answerItem) => {
@@ -61,6 +62,7 @@ const QuizContainer = (props) => {
   };
 
   const onQuizFinished = (event) => {
+    // eslint-disable-next-line
     console.debug(userSelectedAnswerMap);
     userSelectedAnswerMap.forEach((value, key) => {
       DB.updateChosenAnswer(key, value);
