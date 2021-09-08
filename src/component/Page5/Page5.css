@@ -4,6 +4,14 @@
 }
 
 .test-button {
-  width: 4rem;
-  height: 2rem;
+  /* width: 4rem;
+  height: 2rem; */
+}
+
+.test-text {
+    color: darkblue;
+}
+
+.test-text-2 {
+    color: rebeccapurple;
 }
