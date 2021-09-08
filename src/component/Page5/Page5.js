@@ -9,7 +9,7 @@ const onSuccess = (arr) => {
 const onFail = (error) => {
   console.error(error);
 };
-
+// This page is currently used only for testing firebase function !
 const Page5 = () => {
   const onButtonClick = () => {
     DB.getAnswerRate(1, onSuccess, onFail);
