@@ -2,17 +2,19 @@
   margin: 1rem auto;
   padding: 2rem;
   max-width: 750px;
-  background-color: darkslateblue;
-  /* FIXME This might have to be modified based on renewed Page3.css */
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
+  border-style: dashed;
+  border-color: grey;
+  color: black;
 }
 
 .check-quiz-result-button {
-   width: 30%;
-   align-self: center;
-   padding: 1em;
-   margin: 0.5em;
+  width: 30%;
+  align-self: center;
+  padding: 1em;
+  margin: 0.5em;
 }
 
 /* for Quiz visibility toggle */

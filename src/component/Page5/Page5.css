@@ -1,9 +1,9 @@
 .outer-container-page5 {
-    width: 500px;
-    height: 500px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .test-button {
-    width: 400px;
-    height: 400px;
+  width: 4rem;
+  height: 2rem;
 }

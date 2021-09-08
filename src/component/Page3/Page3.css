@@ -14,121 +14,86 @@
   font-style: normal;
 }
 
-/* body {
-  overflow: hidden;
-} */
 .outer-container-page3 {
-  background-image: url(../Page4/img/background.png);
-  background-attachment: fixed;
+  width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: Jaemin;
+  position: absolute;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  flex-basis: 100%;
+  overflow: hidden;
+  z-index: 0;
+  flex-basis: 100%;
 }
 
 .challenge {
   width: 400px;
   height: 100px;
   font-size: 2.5vw;
-  position: sticky;
-  z-index: 3;
-  bottom: 600px;
-  left: 250px;
+  z-index: 2;
   font-weight: bold;
+  position: relative;
+  flex-basis: 100%;
+  color: black;
+  bottom: 85vh;
+  left: 15vw;
 }
 
-.sejong {
+.content {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+/* .sejong {
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
-  z-index: 1;
-}
+  height: 40vh;
+  z-index: 3;
+} */
 
-.text_back {
+/* .text_back {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   flex-basis: 60%;
   position: fixed;
-  z-index: 1;
-}
+  z-index: 2;
+} */
 
 .sejongimg {
-  width: 30vw;
+  width: 25vw;
   height: 80vh;
   flex-basis: 40%;
   position: relative;
-  z-index: 2;
-  top: 190px;
+  bottom: 87vh;
+  z-index: 3;
 }
 
-.text__container {
-  display: flex;
+/* .text__container {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
   flex-basis: 100%;
+  position: absolute;
+  z-index: 2;
+  flex-basis: 60%;
+} */
+
+/* These attributes are included in quiz-outer-container */
+/* .quiz-container-outer {
+  flex-basis: 60%;
   position: relative;
   z-index: 3;
-  bottom: 350px;
-  right: 110px;
-}
+  bottom: 100vh;
+  right: 2vw;
+} */
 
-div.navbar_container {
-  text-align: right;
-  width: 100%;
-  margin: 0;
-  padding: 15px;
-  background-color: #292929;
-  position: sticky;
-  top: 0;
-  z-index: 4;
-  right: -0.5rem;
-}
-
-div.navbar_container {
-  width: 100%;
-}
-
-div.navbar_container a {
-  color: #fff;
-  text-decoration: none;
-  font: 20px Jaemin;
-  font-weight: bold;
-  margin: 0px 10px;
-  padding: 20px 20px;
-  position: sticky;
-  z-index: 4;
-  cursor: pointer;
-}
-
-div.brackets a:before,
-div.brackets a:after {
-  position: absolute;
-  opacity: 0;
-  font-size: 35px;
-  top: 0px;
-  transition: all 0.3s;
-}
-
-div.brackets a:before {
-  content: "(";
-  left: 0px;
-  transform: translateX(10px);
-}
-
-div.brackets a:after {
-  content: ")";
-  right: 0px;
-  transform: translateX(-10px);
-}
-
-div.brackets a:hover:before,
-div.brackets a:hover:after {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
-.textFirstPrize {
+/* .textFirstPrize {
   width: 60vw;
   font-size: 6vw;
   font-weight: bold;
@@ -143,12 +108,15 @@ div.brackets a:hover:after {
 
 /* Quiz */
 .quiz-outer-container {
-  z-index: 6;
-  position: relative;
   display: flex;
   flex-direction: column;
   /* This border style is only for debugging purpose. Modify design later. */
   border-style: dashed;
-  border-color: fuchsia; 
+  border-color: fuchsia;
+  flex-basis: 50%;
   margin-left: 30%;
+  position: relative;
+  z-index: 3;
+  bottom: 100vh;
+  right: 2vw;
 }

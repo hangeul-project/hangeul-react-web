@@ -3,6 +3,7 @@ import Scroll from "react-scroll";
 import Page1 from "../component/Page1/Page1";
 import Page2 from "../component/Page2/Page2";
 import Page3 from "../component/Page3/Page3";
+import Page5 from "../component/Page5/Page5";
 import "./Scroll.css";
 
 export default function PageScroll() {
@@ -48,6 +49,10 @@ export default function PageScroll() {
           > */}
           <Page3 />
           {/* </Scroll.Link> */}
+        </li>
+        {/* === Page4 will appear on top of Page3 when quiz is finished === */}
+        <li>
+          <Page5 />
         </li>
       </ul>
     </div>
