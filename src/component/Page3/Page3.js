@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import sejong from "./img/sejong_1.png";
-import textback from "./img/text_back.png";
+import quizStartBackground from "./img/text_back.png";
 import bg from "../Page4/img/background.png";
 import "../Page1/aos.css";
 import "./Page3.css";
@@ -32,6 +32,22 @@ const Page3 = () => {
         <img src={sejong} alt="sejong" className="sejongimg" />
         <div className="quiz-outer-container">
           <QuizContainer quizItem={HangeulQuizJson} isVisible={isQuizVisible} />
+          <div
+            className={
+              isQuizVisible
+                ? "quiz-start-background-hidden"
+                : "quiz-start-background"
+            }
+          >
+            <img
+              src={quizStartBackground}
+              alt="quiz-start-background"
+              width="100%"
+            />
+            <h3 className="quiz-start-title">
+              한글날 기념 - 제 1회 - 천하제일 세종대회
+            </h3>
+          </div>
           <StartQuizButton
             buttonText="퀴즈 시작!"
             onClickListener={onStartClick}

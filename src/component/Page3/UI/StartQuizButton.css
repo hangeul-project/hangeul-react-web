@@ -1,8 +1,14 @@
 .start-quiz-button {
-    padding: 1em;
-    margin: auto;
+  padding: 1em;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  /* centering */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .start-quiz-button-hidden {
-    display: none;
-  }
+  display: none;
+}
