@@ -1,20 +1,21 @@
-body {
+/* body {
   color: white;
   background-color: #292929;
-  position: relative;
-  right: 3vw;
 }
+  /* 왜 준건가요? */
+/* right: 3vw; */
 
-@media(min-width:1025px) {
-  .container {
-    padding-top: 7vh;
-    width: 100%;
+@media (min-width: 1025px) {
+  .outer-container-page1 {
+    width: 100vw;
     display: block;
-    height: 100%;
+    height: 100vh;
+    background-color: #292929;
+    color: white;
+    /* TODO: 컨테이너 가운데로 정렬 */
   }
 
   .greeting__first {
-    margin-bottom: 1vh;
     position: relative;
     display: block;
   }
@@ -38,8 +39,6 @@ body {
     margin-left: 15vw;
   }
 
-  .greeting__third {}
-
   .greeting__hi {
     font-size: 2vw;
     width: 5vh;
@@ -56,8 +55,6 @@ body {
     margin-left: 35vw;
   }
 
-  .greeting__fourth {}
-
   .greeting__hola {
     font-size: 5vw;
     margin-left: 10vw;
@@ -66,21 +63,19 @@ body {
   .greeting__goni {
     font-size: 4vw;
     margin-left: 65vw;
-
   }
 
-  .greeting__fifth {}
+  .greeting__fifth {
+  }
 
   .greeting__sawa {
     font-size: 3vw;
     margin-left: 40vw;
   }
-
-  .greeting__last {}
 }
 
-@media(min-width:441px) and (max-width:1024px) {
-  .container {
+@media (min-width: 441px) and (max-width: 1024px) {
+  .outer-container-page1 {
     padding-top: 8vh;
     width: 100%;
     display: block;
@@ -112,8 +107,6 @@ body {
     margin-left: 15vw;
   }
 
-  .greeting__third {}
-
   .greeting__hi {
     font-size: 2vw;
     width: 5vh;
@@ -130,35 +123,23 @@ body {
     margin-left: 35vw;
   }
 
-  .greeting__fourth {}
-
   .greeting__hola {
     font-size: 5vw;
     margin-left: 10vw;
-
-
   }
 
   .greeting__goni {
     font-size: 4vw;
     margin-left: 65vw;
-
   }
-
-  .greeting__fifth {}
 
   .greeting__sawa {
     font-size: 3vw;
     margin-left: 40vw;
   }
-
-  /* .next {
-    text-align: right;
-  } */
 }
-
-@media(max-width:440px) {
-  .container {
+@media (max-width: 440px) {
+  .outer-container-page1 {
     width: 100%;
     height: 100%;
     display: block;
@@ -172,7 +153,6 @@ body {
     position: relative;
     display: block;
     margin-left: 5vw;
-
   }
 
   .greeting__hello {
@@ -192,8 +172,6 @@ body {
     margin-left: 15vw;
   }
 
-  .greeting__third {}
-
   .greeting__hi {
     font-size: 2vw;
     width: 5vh;
@@ -210,27 +188,18 @@ body {
     margin-left: 28vw;
   }
 
-  .greeting__fourth {}
-
   .greeting__hola {
     font-size: 5vw;
     margin-left: 10vw;
-
-
   }
 
   .greeting__goni {
     font-size: 4vw;
     margin-left: 65vw;
-
   }
-
-  .greeting__fifth {}
 
   .greeting__sawa {
     font-size: 3vw;
     margin-left: 40vw;
   }
-
-  .greeting__last {}
 }

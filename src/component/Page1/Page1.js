@@ -14,7 +14,7 @@ const Page1 = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="outer-container-page1">
         <div
           className="greeting__first"
           data-aos="fade-in"
@@ -79,22 +79,6 @@ const Page1 = () => {
           data-aos-duration="3000"
         >
           <span className="greeting__sawa">สวัสดีครับ</span>
-        </span>
-        <span
-          className="greeting__last"
-          data-aos="fade-in"
-          data-aos-offset="5"
-          data-aos-easing="ease-in-sine"
-          data-aos-delay="2500"
-        >
-          <Router>
-            <Switch>
-              <Link to="/Page2">다음으로</Link>
-              <Route path="/Page2" component={Page2}>
-                <Page2 />
-              </Route>
-            </Switch>
-          </Router>
         </span>
       </div>
     </>
