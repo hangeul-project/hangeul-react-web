@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import * as DB from "../../database/database";
 import "./Page5.css";
+import getQuestionToAnswerMap from "../../database/QuizService";
 
 // This page is currently used only for testing firebase function !
 const Page5 = () => {
   const answerRateArrayHelper = [];
   const [answerRates, setAnswerRates] = useState(null);
+  const questionToAnswerIdxMap = getQuestionToAnswerMap();
+
+  const isAnswer = (questionId, answerIdx) =>
+    questionToAnswerIdxMap.get(questionId) === answerIdx;
 
   const onSuccess = (arr) => {
     console.log(arr);
     // 서버에서 받아온 각 문제에 대한 정답률을 또 다시 배열에 저장한다.
     answerRateArrayHelper.push(arr);
     if (answerRateArrayHelper.length === 10) {
+      // 10 문제에 대한 정보를 모두 받아온 후 setState 를 호출
       setAnswerRates(answerRateArrayHelper);
     }
   };
@@ -32,16 +38,22 @@ const Page5 = () => {
         문제 오답률 확인
       </button>
       {answerRates &&
-        answerRates.map((arr, idx) => {
+        answerRates.map((individualAnswerRateArr, questionIdx) => {
           return (
             <div className="test-text">
-              {idx + 1}번 문제 정답률 :
+              {questionIdx + 1}번 문제 정답률 :
               <div>
-                {arr.map((rate, idx2) => (
-                  <p className="test-text-2">
-                    {idx2 + 1} 번 선택지 : {rate}
-                  </p>
-                ))}
+                {individualAnswerRateArr.map((rate, answerIdx) => {
+                  return (
+                    <p className="test-text-2">
+                      {/* 올림 처리해서 퍼센트 보여주기 */}
+                      {answerIdx + 1} 번 선택지: {Math.ceil(rate * 100)}% /
+                      {isAnswer(questionIdx + 1, answerIdx)
+                        ? "👏👏👏정답"
+                        : "오답"}
+                    </p>
+                  );
+                })}
               </div>
             </div>
           );

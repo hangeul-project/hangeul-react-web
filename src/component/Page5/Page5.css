@@ -4,14 +4,15 @@
 }
 
 .test-button {
-  /* width: 4rem;
-  height: 2rem; */
+    background-color: aquamarine;
 }
 
 .test-text {
     color: darkblue;
+    margin-left: 3rem;
 }
 
 .test-text-2 {
     color: rebeccapurple;
+    margin-left: 6rem;
 }
