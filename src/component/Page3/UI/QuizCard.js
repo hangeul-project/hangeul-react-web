@@ -20,7 +20,7 @@ const QuizCard = ({ question, answerArray, currentQuizId, onAnswerClick }) => {
             answerId={idx}
             answerText={`${item.answer}`}
             onSelectionChange={onAnswerClick}
-            hasBeenSolved={userSelectedAnswer()}
+            selectedAnswerIdx={userSelectedAnswer()}
           />
         );
       })}
