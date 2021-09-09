@@ -1,205 +1,75 @@
-/* body {
+.outer-container-page1 {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
   color: white;
-  background-color: #292929;
-}
-  /* 왜 준건가요? */
-/* right: 3vw; */
-
-@media (min-width: 1025px) {
-  .outer-container-page1 {
-    width: 100vw;
-    display: block;
-    height: 100vh;
-    background-color: #292929;
-    color: white;
-    /* TODO: 컨테이너 가운데로 정렬 */
-  }
-
-  .greeting__first {
-    position: relative;
-    display: block;
-  }
-
-  .greeting__hello {
-    font-size: 5vw;
-    margin-left: 5vw;
-  }
-
-  .greeting__xinchao {
-    width: 5vw;
-    font-size: 4vw;
-    margin-left: 52vw;
-  }
-
-  .greeting__second {
-    font-size: 3vw;
-  }
-
-  .greeting__gutentag {
-    margin-left: 15vw;
-  }
-
-  .greeting__hi {
-    font-size: 2vw;
-    width: 5vh;
-    margin-left: 30vw;
-  }
-
-  .greeting__bonjour {
-    font-size: 4vw;
-    margin-left: 72vw;
-  }
-
-  .greeting__korean {
-    font-size: 6vw;
-    margin-left: 35vw;
-  }
-
-  .greeting__hola {
-    font-size: 5vw;
-    margin-left: 10vw;
-  }
-
-  .greeting__goni {
-    font-size: 4vw;
-    margin-left: 65vw;
-  }
-
-  .greeting__fifth {
-  }
-
-  .greeting__sawa {
-    font-size: 3vw;
-    margin-left: 40vw;
-  }
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-@media (min-width: 441px) and (max-width: 1024px) {
-  .outer-container-page1 {
-    padding-top: 8vh;
-    width: 100%;
-    display: block;
-    height: 100%;
-  }
-
-  .greeting__first {
-    margin-bottom: 5vh;
-    position: relative;
-    display: block;
-  }
-
-  .greeting__hello {
-    font-size: 5vw;
-    margin-left: 5vw;
-  }
-
-  .greeting__xinchao {
-    width: 5vw;
-    font-size: 4vw;
-    margin-left: 52vw;
-  }
-
-  .greeting__second {
-    font-size: 3vw;
-  }
-
-  .greeting__gutentag {
-    margin-left: 15vw;
-  }
-
-  .greeting__hi {
-    font-size: 2vw;
-    width: 5vh;
-    margin-left: 30vw;
-  }
-
-  .greeting__bonjour {
-    font-size: 4vw;
-    margin-left: 72vw;
-  }
-
-  .greeting__korean {
-    font-size: 6vw;
-    margin-left: 35vw;
-  }
-
-  .greeting__hola {
-    font-size: 5vw;
-    margin-left: 10vw;
-  }
-
-  .greeting__goni {
-    font-size: 4vw;
-    margin-left: 65vw;
-  }
-
-  .greeting__sawa {
-    font-size: 3vw;
-    margin-left: 40vw;
-  }
+.greeting-hello {
+  font-size: 5rem;
+  flex-basis: 50%;
+  position: relative;
+  right: 5vw;
 }
-@media (max-width: 440px) {
-  .outer-container-page1 {
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto;
-    padding-top: 28vh;
-    padding-bottom: 30vh;
-  }
 
-  .greeting__first {
-    margin-bottom: 5vh;
-    position: relative;
-    display: block;
-    margin-left: 5vw;
-  }
+.greeting-xinchao {
+  font-size: 3rem;
+  flex-basis: 50%;
+  position: relative;
+  left: 7vw;
+}
 
-  .greeting__hello {
-    font-size: 5vw;
-  }
+.greeting-guten {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  left: 20vw;
+}
 
-  .greeting__xinchao {
-    font-size: 4vw;
-    margin-left: 40vw;
-  }
+.greeting-nihao {
+  font-size: 4rem;
+  flex-basis: 100%;
+  position: relative;
+  right: 18vw;
+}
 
-  .greeting__second {
-    font-size: 3vw;
-  }
+.greeting-kor {
+  font-size: 5rem;
+  flex-basis: 100%;
+  position: relative;
+}
 
-  .greeting__gutentag {
-    margin-left: 15vw;
-  }
+.greeting-bonjour {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  right: 35vw;
+}
 
-  .greeting__hi {
-    font-size: 2vw;
-    width: 5vh;
-    margin-left: 30vw;
-  }
+.greeting-hola {
+  font-size: 4rem;
+  flex-basis: 100%;
+  position: relative;
+  left: 40vw;
+}
 
-  .greeting__bonjour {
-    font-size: 4vw;
-    margin-left: 70vw;
-  }
+.greeting-goni {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  right: 25vw;
+}
 
-  .greeting__korean {
-    font-size: 6vw;
-    margin-left: 28vw;
-  }
-
-  .greeting__hola {
-    font-size: 5vw;
-    margin-left: 10vw;
-  }
-
-  .greeting__goni {
-    font-size: 4vw;
-    margin-left: 65vw;
-  }
-
-  .greeting__sawa {
-    font-size: 3vw;
-    margin-left: 40vw;
-  }
+.greeting-sawa {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  left: 10vw;
 }

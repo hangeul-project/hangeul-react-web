@@ -16,70 +16,86 @@ const Page1 = () => {
     <>
       <div className="outer-container-page1">
         <div
-          className="greeting__first"
+          className="greeting-hello"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
         >
-          <span className="greeting__hello">HELLO</span>
-          <span className="greeting__xinchao">Xin chào</span>
+          HELLO
         </div>
         <div
-          className="greeting__second"
+          className="greeting-xinchao"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="6000"
+          data-aos-duration="2000"
         >
-          <div className="greeting__gutentag">Guten Tag</div>
+          Xin chào
         </div>
         <div
-          className="greeting__third"
+          className="greeting-guten"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
-          <span className="greeting__hi">你好</span>
+          Guten Tag
         </div>
         <div
-          className="greeting__last"
+          className="greeting-nihao"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-delay="2500"
+          data-aos-duration="2000"
         >
-          <span className="greeting__korean">안녕하세요</span>
+          你好
         </div>
         <div
-          className="greeting__third"
+          className="greeting-kor"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
-          <span className="greeting__bonjour">Bonjour</span>
+          안녕하세요
         </div>
         <div
-          className="greeting__fourth"
+          className="greeting-bonjour"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
-          <div className="greeting__hola page1-button">¡Hola</div>
-          <div className="greeting__goni page1-button">こんにちは</div>
+          Bonjour
         </div>
-        <span
-          className="greeting__fifth"
+        <div
+          className="greeting-hola"
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
-          <span className="greeting__sawa">สวัสดีครับ</span>
-        </span>
+          ¡Hola
+        </div>
+        <div
+          className="greeting-goni"
+          data-aos="fade-in"
+          data-aos-offset="5"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2000"
+        >
+          こんにちは
+        </div>
+        <div
+          className="greeting-sawa"
+          data-aos="fade-in"
+          data-aos-offset="5"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2000"
+        >
+          สวัสดีครับ
+        </div>
       </div>
     </>
   );
