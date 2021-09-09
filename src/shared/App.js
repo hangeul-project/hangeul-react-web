@@ -11,7 +11,7 @@ export default function App() {
       <div>
         <PageScroll />
         {/* page4 확인용 */}
-        {/* <page4 />} */}
+        {/* <page4 /> */}
       </div>
     </>
   );

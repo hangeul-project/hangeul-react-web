@@ -14,11 +14,11 @@ const Page1 = () => {
 
   return (
     <>
-      <div className="outer-container-page1">
+      <div id="outer-container-page1">
         <div
           className="greeting-hello"
           data-aos="fade-in"
-          data-aos-offset="5"
+          data-aos-offset="50"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
         >
@@ -27,36 +27,40 @@ const Page1 = () => {
         <div
           className="greeting-xinchao"
           data-aos="fade-in"
-          data-aos-offset="5"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="2500"
+          data-aos-delay="1000"
         >
           Xin chào
         </div>
         <div
           className="greeting-guten"
           data-aos="fade-in"
-          data-aos-offset="5"
+          data-aos-offset="150"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
+          data-aos-delay="1500"
         >
           Guten Tag
         </div>
         <div
           className="greeting-nihao"
           data-aos="fade-in"
-          data-aos-offset="5"
+          data-aos-offset="100"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
+          data-aos-delay="500"
         >
           你好
         </div>
         <div
           className="greeting-kor"
           data-aos="fade-in"
-          data-aos-offset="5"
+          data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="3000"
+          data-aos-delay="2500"
         >
           안녕하세요
         </div>
@@ -65,7 +69,8 @@ const Page1 = () => {
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
+          data-aos-delay="2000"
         >
           Bonjour
         </div>
@@ -74,7 +79,8 @@ const Page1 = () => {
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="2500"
+          data-aos-delay="100"
         >
           ¡Hola
         </div>
@@ -83,7 +89,8 @@ const Page1 = () => {
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="2500"
+          data-aos-delay="1000"
         >
           こんにちは
         </div>
@@ -92,7 +99,8 @@ const Page1 = () => {
           data-aos="fade-in"
           data-aos-offset="5"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
+          data-aos-delay="500"
         >
           สวัสดีครับ
         </div>
