@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import PageScroll from "../main/Scroll";
 import Page5 from "../component/Page5/Page5";
@@ -6,6 +6,13 @@ import Page5 from "../component/Page5/Page5";
 
 // Rollback changes in this file before push or pull request !
 export default function App() {
+  useEffect(() => {
+    window.onbeforeunload = () => localStorage.clear();
+
+    return () => {
+      window.onbeforeunload = null;
+    };
+  }, []);
   return (
     <>
       <div>

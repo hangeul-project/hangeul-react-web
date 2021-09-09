@@ -12,6 +12,7 @@ const Page5 = () => {
   const isAnswer = (questionId, answerIdx) =>
     questionToAnswerIdxMap.get(questionId) === answerIdx;
 
+  // 서버에서 정답률에 대한 정보를 받아오는게 성공하면 실행되는 함수
   const onSuccess = (arr) => {
     console.log(arr);
     // 서버에서 받아온 각 문제에 대한 정답률을 또 다시 배열에 저장한다.
@@ -22,6 +23,7 @@ const Page5 = () => {
     }
   };
 
+  // 서버에서 정답률에 대한 정보를 받아오는게 실패하면 실행되는 함수
   const onFail = (error) => {
     console.error(error);
   };

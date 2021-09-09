@@ -16,7 +16,7 @@ const QuizCountController = ({
         onClick={onDecrementClick}
         disabled={solvedQuizCount <= 0}
       >
-        Decrement Quiz Count
+        이전 문제
       </button>
       <button
         className="control-button"
@@ -24,7 +24,7 @@ const QuizCountController = ({
         onClick={onIncrementClick}
         disabled={solvedQuizCount === totalQuizCount - 1}
       >
-        Increment Quiz Count
+        다음 문제
       </button>
     </div>
   );
