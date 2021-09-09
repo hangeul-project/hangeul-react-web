@@ -1,205 +1,165 @@
-/* body {
+@media(min-width:441px){
+#outer-container-page1 {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
   color: white;
-  background-color: #292929;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: hidden;
 }
-  /* 왜 준건가요? */
-/* right: 3vw; */
 
-@media (min-width: 1025px) {
-  .outer-container-page1 {
+.greeting-hello {
+  font-size: 5rem;
+  flex-basis: 50%;
+  position: relative;
+  right: 5vw;
+}
+
+.greeting-xinchao {
+  font-size: 3rem;
+  flex-basis: 50%;
+  position: relative;
+  left: 7vw;
+}
+
+.greeting-guten {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  left: 20vw;
+}
+
+.greeting-nihao {
+  font-size: 4rem;
+  flex-basis: 100%;
+  position: relative;
+  right: 18vw;
+}
+
+.greeting-kor {
+  font-size: 7rem;
+  flex-basis: 100%;
+  position: relative;
+}
+
+.greeting-bonjour {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  right: 35vw;
+}
+
+.greeting-hola {
+  font-size: 4rem;
+  flex-basis: 100%;
+  position: relative;
+  left: 40vw;
+}
+
+.greeting-goni {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  right: 25vw;
+}
+
+.greeting-sawa {
+  font-size: 3rem;
+  flex-basis: 100%;
+  position: relative;
+  left: 10vw;
+}
+}
+
+@media(max-width:440px){
+#outer-container-page1 {
     width: 100vw;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    background-color: #292929;
+    background-color: black;
     color: white;
-    /* TODO: 컨테이너 가운데로 정렬 */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    font-size: 10px;
   }
-
-  .greeting__first {
+  .greeting-hello {
+    font-size: 5em;
+    flex-basis: 50%;
     position: relative;
-    display: block;
+    right: 5vw;
+    margin-bottom: -3em;
   }
-
-  .greeting__hello {
-    font-size: 5vw;
-    margin-left: 5vw;
-  }
-
-  .greeting__xinchao {
-    width: 5vw;
-    font-size: 4vw;
-    margin-left: 52vw;
-  }
-
-  .greeting__second {
-    font-size: 3vw;
-  }
-
-  .greeting__gutentag {
-    margin-left: 15vw;
-  }
-
-  .greeting__hi {
-    font-size: 2vw;
-    width: 5vh;
-    margin-left: 30vw;
-  }
-
-  .greeting__bonjour {
-    font-size: 4vw;
-    margin-left: 72vw;
-  }
-
-  .greeting__korean {
-    font-size: 6vw;
-    margin-left: 35vw;
-  }
-
-  .greeting__hola {
-    font-size: 5vw;
-    margin-left: 10vw;
-  }
-
-  .greeting__goni {
-    font-size: 4vw;
-    margin-left: 65vw;
-  }
-
-  .greeting__fifth {
-  }
-
-  .greeting__sawa {
-    font-size: 3vw;
-    margin-left: 40vw;
-  }
-}
-
-@media (min-width: 441px) and (max-width: 1024px) {
-  .outer-container-page1 {
-    padding-top: 8vh;
-    width: 100%;
-    display: block;
-    height: 100%;
-  }
-
-  .greeting__first {
-    margin-bottom: 5vh;
+  
+  .greeting-xinchao {
+    font-size: 3em;
+    flex-basis: 50%;
     position: relative;
-    display: block;
+    left: 5vw;
+    margin-bottom: -3em;
   }
-
-  .greeting__hello {
-    font-size: 5vw;
-    margin-left: 5vw;
-  }
-
-  .greeting__xinchao {
-    width: 5vw;
-    font-size: 4vw;
-    margin-left: 52vw;
-  }
-
-  .greeting__second {
-    font-size: 3vw;
-  }
-
-  .greeting__gutentag {
-    margin-left: 15vw;
-  }
-
-  .greeting__hi {
-    font-size: 2vw;
-    width: 5vh;
-    margin-left: 30vw;
-  }
-
-  .greeting__bonjour {
-    font-size: 4vw;
-    margin-left: 72vw;
-  }
-
-  .greeting__korean {
-    font-size: 6vw;
-    margin-left: 35vw;
-  }
-
-  .greeting__hola {
-    font-size: 5vw;
-    margin-left: 10vw;
-  }
-
-  .greeting__goni {
-    font-size: 4vw;
-    margin-left: 65vw;
-  }
-
-  .greeting__sawa {
-    font-size: 3vw;
-    margin-left: 40vw;
-  }
-}
-@media (max-width: 440px) {
-  .outer-container-page1 {
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto;
-    padding-top: 28vh;
-    padding-bottom: 30vh;
-  }
-
-  .greeting__first {
-    margin-bottom: 5vh;
+  
+  .greeting-guten {
+    font-size: 3em;
+    flex-basis: 100%;
     position: relative;
-    display: block;
-    margin-left: 5vw;
+    left: 20vw;
+    margin-bottom: -3em;
   }
-
-  .greeting__hello {
-    font-size: 5vw;
+  
+  .greeting-nihao {
+    font-size: 4em;
+    flex-basis: 100%;
+    position: relative;
+    right: 18vw;
+    margin-bottom: -1em;
   }
-
-  .greeting__xinchao {
-    font-size: 4vw;
-    margin-left: 40vw;
+  
+  .greeting-kor {
+    font-size: 5em;
+    flex-basis: 100%;
+    position: relative;
   }
-
-  .greeting__second {
-    font-size: 3vw;
+  
+  .greeting-bonjour {
+    font-size: 3em;
+    flex-basis: 100%;
+    position: relative;
+    right: 35vw;
+    margin-top: -1em;
   }
-
-  .greeting__gutentag {
-    margin-left: 15vw;
+  
+  .greeting-hola {
+    font-size: 4em;
+    flex-basis: 100%;
+    position: relative;
+    left: 30vw;
+    margin-top: -4em;
   }
-
-  .greeting__hi {
-    font-size: 2vw;
-    width: 5vh;
-    margin-left: 30vw;
+  
+  .greeting-goni {
+    font-size: 3em;
+    flex-basis: 100%;
+    position: relative;
+    right: 25vw;
+    margin-top: -5em;
   }
-
-  .greeting__bonjour {
-    font-size: 4vw;
-    margin-left: 70vw;
-  }
-
-  .greeting__korean {
-    font-size: 6vw;
-    margin-left: 28vw;
-  }
-
-  .greeting__hola {
-    font-size: 5vw;
-    margin-left: 10vw;
-  }
-
-  .greeting__goni {
-    font-size: 4vw;
-    margin-left: 65vw;
-  }
-
-  .greeting__sawa {
-    font-size: 3vw;
-    margin-left: 40vw;
+  
+  .greeting-sawa {
+    font-size: 3em;
+    flex-basis: 100%;
+    position: relative;
+    left: 10vw;
+    margin-top: -6em;
   }
 }
