@@ -42,7 +42,7 @@
   flex-basis: 100%;
   color: black;
   bottom: 85vh;
-  left: 15vw;
+  left: 13vw;
 }
 
 .content {
@@ -66,9 +66,9 @@
 } */
 
 .sejongimg {
-  width: 25vw;
+  width: 20vw;
   height: 80vh;
-  flex-basis: 40%;
+  flex-basis: 35%;
   position: relative;
   bottom: 87vh;
   z-index: 3;

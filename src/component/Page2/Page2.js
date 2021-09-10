@@ -50,20 +50,19 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="350"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
           data-aos-delay="1000"
           data-aos-anchor-placement="top-center"
         >
-          {" "}
           <img className="jjum" alt="jjum" src={jjum} width="70px" />
         </div>
         <br />
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="400"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
           data-aos-delay="2000"
@@ -75,7 +74,7 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="400"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
           data-aos-delay="2000"
@@ -87,7 +86,7 @@ export default function Page2() {
         <div
           className="crow"
           data-aos="fade-in"
-          data-aos-offset="450"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
           data-aos-delay="3000"
