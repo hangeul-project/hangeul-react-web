@@ -112,32 +112,35 @@ div.brackets a:hover:after {
 }
 
 .textback {
-  width: 95vw;
+  width: 70rem;
   height: 90vh;
   position: fixed;
   top: 12vh;
-  right: 5vw;
+  right: 40rem;
+  
 }
 
 .youris {
-  height: 90vh;
+  height: 10rem;
   color: #292929;
-  font-size: 8vh;
+  font-size: 4rem;
   font-weight: bolder;
   position: fixed;
-  left: 16vw;
+  width:50rem;
+  right: 50rem;
   z-index: 3;
-  top: 250px;
+  top: 15rem;
 }
 
 .description {
   color: #292929;
-  font-size: 3vh;
+  font-size: 2rem;
   font-weight: bold;
   z-index: 3;
-  top: 400px;
-  left: 270px;
+  top: 26rem;
+  right: 56rem;
   position: fixed;
+  width: 40rem;
 }
 
 button {
@@ -189,8 +192,9 @@ button:hover:after {
 .choice {
   display: inline-block flex;
   position: fixed;
-  left: 550px;
+  right: 46rem;
   bottom: 1.2rem;
+  width: 30rem;
 }
 .choice__first {
   display: inline;
