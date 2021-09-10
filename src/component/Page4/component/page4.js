@@ -20,16 +20,18 @@ const ChoiceBtn = () => (
 function Page4() {
   return (
     <div className="outer-container-page4">
-      <div className="navbar__container brackets">
+      {/* NavBar 따로 컴포넌트로 분리하기 */}
+      {/* <div className="navbar__container brackets">
         <a href="http://www.naver.com">내부바1</a>
         <a href="http://portal.hanyang.ac.kr">내부바2</a>
         <a href="http://www.google.com">내부바3</a>
-      </div>
+      </div> */}
       <div className="container">
         <img className="textback" src={textback} alt="textback" />
-        <div className="your">
+        <div className="description">
           <div className="youris">당신은 언어의 대가, 사신 유씨!</div>
-          <div className="description">
+          <div className="detail">
+            <br />
             어릴때부터 이웃국가들 언어를 익혀, <br /> 나라를 오가며 조선의
             외교를 담당하고 있군요.
             <br />
@@ -47,8 +49,8 @@ function Page4() {
           </div>
         </div>
         <img className="char" src={charA} alt="캐릭터" />
-        <ChoiceBtn />
       </div>
+      {/* <ChoiceBtn /> */}
     </div>
   );
 }
