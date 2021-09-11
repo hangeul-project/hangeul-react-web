@@ -6,6 +6,7 @@ import QuizProgressBar from "./QuizProgressBar";
 import QuizCountController from "./QuizCountController";
 import "./QuizContainer.css";
 import * as DB from "../../../database/database";
+import * as Storage from "../../../database/LocalStorage";
 
 export const TOTAL_QUIZ_NUM = 10;
 const userSelectedAnswerMap = new Map();
@@ -43,8 +44,6 @@ const QuizContainer = (props) => {
     getQuizContent();
   }, [userSelectedAnswerMap]);
 
-  const hasBeenSolved = userSelectedAnswerMap.get(solvedQuizCount + 1) > -1;
-
   const onIncrementClick = () => {
     if (solvedQuizCount < TOTAL_QUIZ_NUM) {
       setSolvedQuizCount(solvedQuizCount + 1);
@@ -59,6 +58,8 @@ const QuizContainer = (props) => {
 
   const onAnswerClick = (event, selectedAnswerId) => {
     userSelectedAnswerMap.set(solvedQuizCount + 1, selectedAnswerId);
+    // 사용자가 몇 번을 정답으로 선택했는지에 대해서 local storage 에 저장한다.
+    Storage.saveUserSelectedAnswer(solvedQuizCount + 1, selectedAnswerId);
   };
 
   const onQuizFinished = (event) => {
@@ -70,7 +71,14 @@ const QuizContainer = (props) => {
   };
 
   return (
-    <div className="quiz-container-outer">
+    // Toggles visibility of quiz container
+    <div
+      className={
+        props.isVisible
+          ? "quiz-container-outer"
+          : "quiz-hidden quiz-container-outer"
+      }
+    >
       <QuizProgressBar progress={solvedQuizCount + 1} />
 
       {isContentLoaded && (
@@ -79,7 +87,6 @@ const QuizContainer = (props) => {
           answerArray={quizContent.optionArr[solvedQuizCount]}
           currentQuizId={solvedQuizCount + 1}
           onAnswerClick={onAnswerClick}
-          hasBeenSolved={hasBeenSolved}
         />
       )}
 
@@ -95,7 +102,7 @@ const QuizContainer = (props) => {
         type="button"
         onClick={onQuizFinished}
       >
-        Check Result
+        결과 확인하기
       </button>
     </div>
   );

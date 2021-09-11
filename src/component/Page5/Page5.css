@@ -1,0 +1,18 @@
+.outer-container-page5 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.test-button {
+    background-color: aquamarine;
+}
+
+.test-text {
+    color: darkblue;
+    margin-left: 3rem;
+}
+
+.test-text-2 {
+    color: rebeccapurple;
+    margin-left: 6rem;
+}

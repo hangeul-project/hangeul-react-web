@@ -23,12 +23,13 @@ function calculateAnswerRate(answerArr) {
   const answerRateArr = [];
   let total = 0;
   // get total answer counts
-  answerArr.array.forEach((element) => {
+  answerArr.forEach((element) => {
     total += element;
   });
   // calculate select count divided by total selection count
-  answerArr.array.forEach((element) => {
-    answerRateArr.push(element / total);
+  answerArr.forEach((element) => {
+    answerRateArr.push(Math.floor((element / total) * 100) / 100);
+    // Round down to two decimal places. Ex.  [ 0.71, 0, 0.28 ]
   });
   return answerRateArr;
 }
@@ -53,6 +54,7 @@ export function getAnswerRate(numQuestion, onSuccess, onFailed) {
     .then((snapshot) => {
       if (snapshot.exists()) {
         const data = snapshot.val();
+        console.log(data);
         const answerRateArr = calculateAnswerRate(data);
         onSuccess(answerRateArr);
       }
