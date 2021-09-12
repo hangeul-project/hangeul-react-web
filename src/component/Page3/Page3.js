@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import sejong from "./img/sejong_1.png";
 import quizStartBackground from "./img/text_back.png";
-import bg from "../Page4/img/background.png";
+import bg from "../Page4/img/bg.png";
 import "../Page1/aos.css";
 import "./Page3.css";
 import QuizContainer from "./UI/QuizContainer";
