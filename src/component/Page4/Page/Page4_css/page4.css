@@ -35,45 +35,52 @@ li {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  font-size: 10px;
 }
 
 .textback {
   flex-basis: 100%;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  width: 60vw;
+  height: 600px;
   z-index: 1;
+  position: absolute;
+  min-height: 100vh;
 }
 
 .description {
-  flex-basis: 100%;
-  position: fixed;
+  flex-basis: 60%;
   z-index: 2;
-  top: 22vh;
 }
 
 .youris {
   color: #292929;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   z-index: 2;
+  place-items: top;
+  display: grid;
+  place-items: center;
+  min-height: 40vh;
 }
 
 .detail {
   color: #292929;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   z-index: 3;
+  display: grid;
+  place-items: center;
+  min-height: 20vh;
 }
 
 .char {
-  width: 60vw;
+  height: 100vh;
+  width: 40vw;
   position: relative;
-  flex-basis: 55%;
+  flex-basis: 40%;
   margin-left: auto;
   z-index: 4;
   top: 10vh;
-  left: 5vw;
 }
 
 /* 버튼 3개 위한 CSS */

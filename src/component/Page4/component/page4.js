@@ -31,7 +31,6 @@ function Page4() {
         <div className="description">
           <div className="youris">당신은 언어의 대가, 사신 유씨!</div>
           <div className="detail">
-            <br />
             어릴때부터 이웃국가들 언어를 익혀, <br /> 나라를 오가며 조선의
             외교를 담당하고 있군요.
             <br />
