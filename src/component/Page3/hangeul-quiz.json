@@ -40,15 +40,15 @@
     "question": "한글은 모든 소리를 표현하지 못한다.",
     "options": [
       {
-        "answer": "O",
-        "isCorrect": false
+        "answer": "아니다. 모든 소리를 표현할 수 있다.",
+        "isCorrect": true
       },
       {
-        "answer": "X",
-        "isCorrect": true
+        "answer": "맞다. 모든 소리를 표현할 수 있는 한글, 짱짱!",
+        "isCorrect": false
       }
     ],
-    "explanation": "X",
+    "explanation": "한글은 모든 소리를 표현할 수 없다.",
     "hasMoreExplanation": false
   },
   {

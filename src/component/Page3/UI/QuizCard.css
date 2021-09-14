@@ -4,4 +4,8 @@
   border-radius: 30px;
   padding: 1rem;
   transition: all 1s;
+  border-style: dashed;
+  border-color: fuchsia;
+  display: flex;
+  flex-direction: column;
 }

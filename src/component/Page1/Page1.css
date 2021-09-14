@@ -1,84 +1,96 @@
-@media(min-width:441px){
-#outer-container-page1 {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: black;
-  color: white;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  overflow: hidden;
+@font-face {
+  font-family: "Jaemin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jaemin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.greeting-hello {
-  font-size: 5rem;
-  flex-basis: 50%;
-  position: relative;
-  right: 5vw;
+div {
+  font-family: Jaemin;
 }
 
-.greeting-xinchao {
-  font-size: 3rem;
-  flex-basis: 50%;
-  position: relative;
-  left: 7vw;
+@media (min-width: 441px) {
+  #outer-container-page1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .greeting-hello {
+    font-size: 5rem;
+    flex-basis: 50%;
+    position: relative;
+    right: 5vw;
+  }
+
+  .greeting-xinchao {
+    font-size: 3rem;
+    flex-basis: 50%;
+    position: relative;
+    left: 7vw;
+  }
+
+  .greeting-guten {
+    font-size: 3rem;
+    flex-basis: 100%;
+    position: relative;
+    left: 20vw;
+  }
+
+  .greeting-nihao {
+    font-size: 4rem;
+    flex-basis: 100%;
+    position: relative;
+    right: 18vw;
+  }
+
+  .greeting-kor {
+    font-size: 7rem;
+    flex-basis: 100%;
+    position: relative;
+  }
+
+  .greeting-bonjour {
+    font-size: 3rem;
+    flex-basis: 100%;
+    position: relative;
+    right: 35vw;
+  }
+
+  .greeting-hola {
+    font-size: 4rem;
+    flex-basis: 100%;
+    position: relative;
+    left: 40vw;
+  }
+
+  .greeting-goni {
+    font-size: 3rem;
+    flex-basis: 100%;
+    position: relative;
+    right: 25vw;
+  }
+
+  .greeting-sawa {
+    font-size: 3rem;
+    flex-basis: 100%;
+    position: relative;
+    left: 10vw;
+  }
 }
 
-.greeting-guten {
-  font-size: 3rem;
-  flex-basis: 100%;
-  position: relative;
-  left: 20vw;
-}
-
-.greeting-nihao {
-  font-size: 4rem;
-  flex-basis: 100%;
-  position: relative;
-  right: 18vw;
-}
-
-.greeting-kor {
-  font-size: 7rem;
-  flex-basis: 100%;
-  position: relative;
-}
-
-.greeting-bonjour {
-  font-size: 3rem;
-  flex-basis: 100%;
-  position: relative;
-  right: 35vw;
-}
-
-.greeting-hola {
-  font-size: 4rem;
-  flex-basis: 100%;
-  position: relative;
-  left: 40vw;
-}
-
-.greeting-goni {
-  font-size: 3rem;
-  flex-basis: 100%;
-  position: relative;
-  right: 25vw;
-}
-
-.greeting-sawa {
-  font-size: 3rem;
-  flex-basis: 100%;
-  position: relative;
-  left: 10vw;
-}
-}
-
-@media(max-width:440px){
-#outer-container-page1 {
+@media (max-width: 440px) {
+  #outer-container-page1 {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -100,7 +112,6 @@
     right: 5vw;
     margin-bottom: -3em;
   }
-  
   .greeting-xinchao {
     font-size: 3em;
     flex-basis: 50%;
@@ -108,15 +119,6 @@
     left: 5vw;
     margin-bottom: -3em;
   }
-  
-  .greeting-guten {
-    font-size: 3em;
-    flex-basis: 100%;
-    position: relative;
-    left: 20vw;
-    margin-bottom: -3em;
-  }
-  
   .greeting-nihao {
     font-size: 4em;
     flex-basis: 100%;
@@ -124,13 +126,11 @@
     right: 18vw;
     margin-bottom: -1em;
   }
-  
   .greeting-kor {
     font-size: 5em;
     flex-basis: 100%;
     position: relative;
   }
-  
   .greeting-bonjour {
     font-size: 3em;
     flex-basis: 100%;
@@ -138,7 +138,6 @@
     right: 35vw;
     margin-top: -1em;
   }
-  
   .greeting-hola {
     font-size: 4em;
     flex-basis: 100%;
@@ -146,7 +145,6 @@
     left: 30vw;
     margin-top: -4em;
   }
-  
   .greeting-goni {
     font-size: 3em;
     flex-basis: 100%;
@@ -154,7 +152,6 @@
     right: 25vw;
     margin-top: -5em;
   }
-  
   .greeting-sawa {
     font-size: 3em;
     flex-basis: 100%;

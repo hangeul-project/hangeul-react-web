@@ -1,17 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import sejong from "./img/sejong_1.png";
-import textback from "./img/text_back.png";
-import bg from "../Page4/img/background.png";
+import quizStartBackground from "./img/text_back.png";
+import bg from "../Page4/img/bg.png";
 import "../Page1/aos.css";
 import "./Page3.css";
 import QuizContainer from "./UI/QuizContainer";
+import StartQuizButton from "./UI/StartQuizButton";
 import HangeulQuizJson from "./hangeul-quiz.json";
 
 const Page3 = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  const [isQuizVisible, setIsQuizVisible] = useState(false);
+  const onStartClick = () => {
+    setIsQuizVisible(!isQuizVisible);
+  };
 
   return (
     <div className="outer-container-page3">
@@ -25,9 +30,30 @@ const Page3 = () => {
       <div className="challenge">나에 대해 맞춰보라굿!</div>
       <div className="content">
         <img src={sejong} alt="sejong" className="sejongimg" />
-        {/* TODO: 퀴즈 컨테이너 완성 후 Rollback -> 족자안으로 넣는 작업하기 */}
-        {/* <img src={textback} alt="textback" className="text_back" /> */}
-        <QuizContainer quizItem={HangeulQuizJson} className="quiz" />
+        <div className="quiz-outer-container">
+          <QuizContainer quizItem={HangeulQuizJson} isVisible={isQuizVisible} />
+          <div
+            className={
+              isQuizVisible
+                ? "quiz-start-background-hidden"
+                : "quiz-start-background"
+            }
+          >
+            <img
+              src={quizStartBackground}
+              alt="quiz-start-background"
+              width="100%"
+            />
+            <h3 className="quiz-start-title">
+              한글날 기념 - 제 1회 - 천하제일 세종대회
+            </h3>
+          </div>
+          <StartQuizButton
+            buttonText="퀴즈 시작!"
+            onClickListener={onStartClick}
+            isVisible={!isQuizVisible}
+          />
+        </div>
       </div>
     </div>
   );

@@ -58,6 +58,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 3vw;
     font-style: bold;
     writing-mode: vertical-lr;
@@ -66,11 +68,9 @@
     font-family: Jaemin;
     background-color: #292929;
     color: white;
-    /* overflow: hidden; */
   }
 
   .jjum {
-    display: inline-block flex;
   }
 
   .crow {
