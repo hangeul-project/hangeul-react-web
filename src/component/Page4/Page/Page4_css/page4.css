@@ -83,14 +83,13 @@ li {
 }
 
 /* 1300px이상 너비에 글씨, 캐릭터 크기 적용 */
-@media(min-width:1300px) {
+@media (min-width:1300px) {
   .container {
     display: flex;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     font-size: 10px;
-    text-align: center;
   }
 
   .textback {
@@ -109,7 +108,7 @@ li {
 
   .youris {
     color: #292929;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     z-index: 2;
     display: grid;
@@ -119,7 +118,7 @@ li {
 
   .detail {
     color: #292929;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     z-index: 3;
     display: grid;
@@ -166,7 +165,7 @@ li {
 
   .youris {
     color: #292929;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     z-index: 2;
     position: relative;
@@ -177,7 +176,7 @@ li {
 
   .detail {
     color: #292929;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     z-index: 3;
     display: grid;
