@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import PageScroll from "../main/Scroll";
-// import Page5 from "../component/Page5/Page5";
-// import Page4 from "../component/Page4/component/page4";
+import Page1 from "../component/Page1/Page1";
+import Page2 from "../component/Page2/Page2";
 import Page3 from "../component/Page3/Page3";
+import Page5 from "../component/Page5/Page5";
 
 // Rollback changes in this file before push or pull request !
 export default function App() {
@@ -17,12 +17,16 @@ export default function App() {
   return (
     <>
       <div>
-        {/* <PageScroll /> */}
-        {/* page3 확인용 */}
+        <Page1 />
+      </div>
+      <div>
+        <Page2 />
+      </div>
+      <div>
         <Page3 />
-        {/* page4 확인용 */}
-        {/* <Page4 /> */}
-        {/* <Page5 /> */}
+      </div>
+      <div>
+        <Page5 />
       </div>
     </>
   );

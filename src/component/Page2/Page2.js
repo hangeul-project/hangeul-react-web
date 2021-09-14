@@ -27,7 +27,7 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="200"
+          data-aos-offset="1"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
           data-aos-delay="100"
@@ -38,7 +38,7 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="300"
+          data-aos-offset="1"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
           data-aos-delay="500"
@@ -50,10 +50,23 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="200"
+          data-aos-offset="1"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
-          data-aos-delay="1000"
+          data-aos-delay="700"
+          data-aos-anchor-placement="top-center"
+        >
+          {/* 여기 너무 딜레이 길어서 좀 줄였어요 */}
+          <img className="jjum" alt="jjum" src={jjum} width="70px" />
+        </div>
+        <br />
+        <br />
+        <div
+          data-aos="fade-in"
+          data-aos-offset="1"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2000"
+          data-aos-delay="700"
           data-aos-anchor-placement="top-center"
         >
           <img className="jjum" alt="jjum" src={jjum} width="70px" />
@@ -62,22 +75,10 @@ export default function Page2() {
         <br />
         <div
           data-aos="fade-in"
-          data-aos-offset="200"
+          data-aos-offset="1"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
-          data-aos-delay="2000"
-          data-aos-anchor-placement="top-center"
-        >
-          <img className="jjum" alt="jjum" src={jjum} width="70px" />
-        </div>
-        <br />
-        <br />
-        <div
-          data-aos="fade-in"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
-          data-aos-delay="2000"
+          data-aos-delay="700"
           data-aos-anchor-placement="top-center"
         >
           <img className="jjum" alt="jjum" src={jjum} width="70px" />
@@ -86,10 +87,10 @@ export default function Page2() {
         <div
           className="crow"
           data-aos="fade-in"
-          data-aos-offset="200"
+          data-aos-offset="1"
           data-aos-easing="ease-in-sine"
           data-aos-duration="2000"
-          data-aos-delay="3000"
+          data-aos-delay="700"
           data-aos-anchor-placement="top-center"
         >
           <img className="crow" alt="crow" src={crow} width="400px" />
