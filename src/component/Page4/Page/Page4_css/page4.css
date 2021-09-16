@@ -1,23 +1,6 @@
 @font-face {
   font-family: "Jaemin";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jaemin.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "KoPubDotumMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IM_Hyemin-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jaemin.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,110 +19,238 @@ li {
 
 .outer-container-page4 {
   font-family: Jaemin;
-}
-
-.container {
-  text-align: center;
-  background-image: url(../../img/background.png);
+  background-image: url(../../img/bg.png);
   background-attachment: fixed;
   background-position: top;
   height: 100vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.navbar__container {
-  text-align: right;
-  width: 100%;
-  margin: 0;
-  padding: 15px;
-  background-color: #292929;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  right: -0.5rem;
+@media (min-width:769px) and (max-width:1299px) {
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 10px;
+  }
+
+  .textback {
+    flex-basis: 100%;
+    width: 60vw;
+    height: 600px;
+    z-index: 1;
+    position: absolute;
+    min-height: 100vh;
+  }
+
+  .description {
+    flex-basis: 60%;
+    z-index: 2;
+  }
+
+  .youris {
+    color: #292929;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    min-height: 40vh;
+  }
+
+  .detail {
+    color: #292929;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    min-height: 20vh;
+  }
+
+  .char {
+    height: 70vh;
+    width: 40vw;
+    position: relative;
+    flex-basis: 40%;
+    margin-left: auto;
+    z-index: 4;
+    top: 40vh;
+  }
 }
 
-div.navbar__container a {
-  color: #fff;
-  text-decoration: none;
-  font: 20px Jaemin;
-  font-weight: bold;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
+/* 1300px이상 너비에 글씨, 캐릭터 크기 적용 */
+@media (min-width:1300px) {
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 10px;
+  }
+
+  .textback {
+    flex-basis: 100%;
+    width: 60vw;
+    height: 600px;
+    z-index: 1;
+    position: absolute;
+    min-height: 100vh;
+  }
+
+  .description {
+    flex-basis: 60%;
+    z-index: 2;
+  }
+
+  .youris {
+    color: #292929;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    min-height: 40vh;
+  }
+
+  .detail {
+    color: #292929;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    min-height: 20vh;
+  }
+
+  .char {
+    height: 90vh;
+    width: 40vw;
+    position: relative;
+    flex-basis: 40%;
+    margin-left: auto;
+    z-index: 4;
+    top: 20vh;
+  }
 }
 
-div.brackets a:before,
-div.brackets a:after {
-  position: absolute;
-  opacity: 0;
-  font-size: 35px;
-  top: 0px;
-  transition: all 0.3s;
+/* 모바일 버전 css */
+@media (min-width: 441px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textback {
+    top: 30vh;
+    width: 100vw;
+    height: 70vh;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .description {
+    order: 2;
+    flex-basis: 100%;
+    z-index: 2;
+  }
+
+  .youris {
+    color: #292929;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    z-index: 2;
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 30vh;
+  }
+
+  .detail {
+    color: #292929;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+  }
+
+  .char {
+    width: 30vh;
+    height: 30vh;
+    flex-basis: 30%;
+    z-index: 1;
+    order: 1;
+    display: block;
+    margin: 0px auto;
+  }
 }
 
-div.brackets a:before {
-  content: "(";
-  left: 0px;
-  transform: translateX(10px);
+@media (max-width: 440px) {
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textback {
+    top: 30vh;
+    width: 100vw;
+    height: 70vh;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .description {
+    order: 2;
+    flex-basis: 100%;
+    z-index: 2;
+  }
+
+  .youris {
+    color: #292929;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    z-index: 2;
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 30vh;
+  }
+
+  .detail {
+    color: #292929;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+  }
+
+  .char {
+    width: 30vh;
+    height: 30vh;
+    flex-basis: 30%;
+    z-index: 1;
+    order: 1;
+    display: block;
+    margin: 0px auto;
+  }
 }
 
-div.brackets a:after {
-  content: ")";
-  right: 0px;
-  transform: translateX(-10px);
-}
-
-div.brackets a:hover:before,
-div.brackets a:hover:after {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
-.your {
-  width: 1050px;
-  height: 800px;
-}
-.char {
-  width: 800px;
-  height: 800px;
-  position: fixed;
-  bottom: -4rem;
-  right: -3rem;
-}
-
-.textback {
-  width: 95vw;
-  height: 90vh;
-  position: fixed;
-  top: 12vh;
-  right: 5vw;
-}
-
-.youris {
-  height: 90vh;
-  color: #292929;
-  font-size: 8vh;
-  font-weight: bolder;
-  position: fixed;
-  left: 16vw;
-  z-index: 3;
-  top: 250px;
-}
-
-.description {
-  color: #292929;
-  font-size: 3vh;
-  font-weight: bold;
-  z-index: 3;
-  top: 400px;
-  left: 270px;
-  position: fixed;
-}
-
+/* 버튼 3개 위한 CSS */
 button {
   font-family: Jaemin;
   border-radius: 5px;
@@ -189,9 +300,11 @@ button:hover:after {
 .choice {
   display: inline-block flex;
   position: fixed;
-  left: 550px;
+  right: 46rem;
   bottom: 1.2rem;
+  width: 30rem;
 }
+
 .choice__first {
   display: inline;
   float: right;
@@ -209,6 +322,7 @@ button:hover:after {
   font-size: 20px;
   font-weight: bold;
 }
+
 .choice__third {
   display: inline;
   float: right;
@@ -217,3 +331,55 @@ button:hover:after {
   font-size: 20px;
   font-weight: bold;
 }
+
+/* TODO: NavBar 따로 컴포넌트로 분리하기 */
+/* div.navbar__container {
+  text-align: right;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  background-color: #292929;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: -0.5rem;
+}
+
+div.navbar__container a {
+  color: #fff;
+  text-decoration: none;
+  font: 20px Jaemin;
+  font-weight: bold;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.brackets a:before,
+div.brackets a:after {
+  position: absolute;
+  opacity: 0;
+  font-size: 35px;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+div.brackets a:before {
+  content: "(";
+  left: 0px;
+  transform: translateX(10px);
+}
+
+div.brackets a:after {
+  content: ")";
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+div.brackets a:hover:before,
+div.brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+} */

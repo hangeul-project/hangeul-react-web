@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "./App.css";
 import PageScroll from "../main/Scroll";
 // import Page5 from "../component/Page5/Page5";
-// import Page4 from "../component/Page4/component/page4";
-import Page3 from "../component/Page3/Page3";
+import Page4 from "../component/Page4/component/page4";
+// import Page3 from "../component/Page3/Page3";
 
 // Rollback changes in this file before push or pull request !
 export default function App() {
@@ -19,9 +19,9 @@ export default function App() {
       <div>
         {/* <PageScroll /> */}
         {/* page3 확인용 */}
-        <Page3 />
+        {/* <Page3 /> */}
         {/* page4 확인용 */}
-        {/* <Page4 /> */}
+        <Page4 />
         {/* <Page5 /> */}
       </div>
     </>
