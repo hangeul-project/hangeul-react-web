@@ -1,23 +1,25 @@
 import React from "react";
-import "../Page4_css/page4.css";
+import "../Page4_css/Page4.css";
 import charA from "../img/img.png";
-import ResultPage from "./ResultPage.json";
+import ResultPage from "./ResultPage";
 
-const ChoiceBtn = () => (
-  <div className="choice">
-    <button type="button" className="choice__first">
-      끝내겠소
-    </button>
-    <button type="button" className="choice__second">
-      기부하겠소
-    </button>
-    <button type="button" className="choice__third">
-      공유하겠소
-    </button>
-  </div>
-);
+const ChoiceBtn = () => {
+  return (
+    <div className="choice">
+      <button type="button" className="choice__first">
+        끝내겠소
+      </button>
+      <button type="button" className="choice__second">
+        기부하겠소
+      </button>
+      <button type="button" className="choice__third">
+        공유하겠소
+      </button>
+    </div>
+  );
+};
 
-function Page4() {
+export default function Page4() {
   return (
     <div className="outer-container-page4">
       <div className="navbar__container brackets">
@@ -35,5 +37,3 @@ function Page4() {
     </div>
   );
 }
-
-export default Page4;

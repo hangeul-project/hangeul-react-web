@@ -3,7 +3,8 @@ import "./App.css";
 import Page1 from "../component/Page1/Page1";
 import Page2 from "../component/Page2/Page2";
 import Page3 from "../component/Page3/Page3";
-//  import Page4 from "../component/Page4/component/page4";
+import Page4 from "../component/Page4/component/Page4";
+import Page4Sharing from "../component/Page4/component/Page4Sharing";
 import Page5 from "../component/Page5/Page5";
 
 // Rollback changes in this file before push or pull request !
@@ -25,6 +26,12 @@ export default function App() {
       </div>
       <div>
         <Page3 />
+      </div>
+      <div>
+        <Page4 />
+      </div>
+      <div>
+        <Page4Sharing />
       </div>
       <div>
         <Page5 />

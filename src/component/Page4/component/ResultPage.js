@@ -1,8 +1,8 @@
 import React from "react";
-import "../Page4_css/page4.css";
+import "../Page4_css/Page4.css";
 import getQuestionToAnswerMap from "../../../database/QuizService";
 import { getUserSelectedAnswer } from "../../../database/LocalStorage";
-import Result from "./ResultArray";
+import ResultArray from "./ResultArray";
 import textback from "../img/text_back_line2.png";
 
 const CountAnswer = () => {
@@ -20,7 +20,7 @@ const CountAnswer = () => {
 
 const Decide = () => {
   const count = CountAnswer();
-  const arr = Result();
+  const arr = ResultArray();
   let resultValue = [];
   if (count < 1) {
     resultValue = [arr[0][0], arr[0][1]]; // get the result character and description

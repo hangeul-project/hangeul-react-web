@@ -1,8 +1,8 @@
 import React from "react";
-import "../Page4_css/page4s.css";
+import "../Page4_css/Page4Sharing.css";
 import charA from "../img/img.png";
 
-function Page4s() {
+export default function Page4Sharing() {
   return (
     <>
       <div className="container">
@@ -35,5 +35,3 @@ function Page4s() {
     </>
   );
 }
-
-export default Page4s;
