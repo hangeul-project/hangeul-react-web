@@ -1,5 +1,5 @@
 import React from "react";
-import "../Page4_css/Page4Sharing.css";
+import "../css/Page4Sharing.css";
 import charA from "../img/img.png";
 
 export default function Page4Sharing() {

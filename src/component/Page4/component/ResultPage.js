@@ -1,5 +1,5 @@
 import React from "react";
-import "../Page4_css/Page4.css";
+import "../css/Page4.css";
 import getQuestionToAnswerMap from "../../../database/QuizService";
 import { getUserSelectedAnswer } from "../../../database/LocalStorage";
 import ResultArray from "./ResultArray";
