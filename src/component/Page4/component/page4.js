@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Page4.css";
-import charA from "../img/img.png";
-import ResultPage from "./ResultPage";
+import charA from "../img/resultimage/sasin.png";
+import Decide from "./ResultPage";
 
 const ChoiceBtn = () => {
   return (
@@ -28,7 +28,7 @@ export default function Page4() {
         <a href="http://www.google.com">내부바3</a>
       </div>
       <div>
-        <ResultPage />
+        <Decide />
       </div>
       <div>
         <img className="char" src={charA} alt="캐릭터" />
