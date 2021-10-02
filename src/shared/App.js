@@ -7,7 +7,7 @@ import Page4 from "../component/Page4/component/Page4";
 import Page4Sharing from "../component/Page4/component/Page4Sharing";
 import Page5 from "../component/Page5/Page5";
 
-// Rollback changes in this file before push or pull request !
+// Rollback changes in this file before push orgin pull request !
 export default function App() {
   useEffect(() => {
     // 사용자가 퀴즈에서 선택한 선택지가 Page Refresh 이후 삭제될 수 있도록 함
