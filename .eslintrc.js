@@ -21,4 +21,5 @@ module.exports = {
     "no-unused-vars": "off",
     "no-console": "off",
   },
+  parser: "babel-eslint",
 };
