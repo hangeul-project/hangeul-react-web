@@ -19,7 +19,15 @@ li {
 
 .outer-container-page4 {
   font-family: Jaemin;
+<<<<<<< HEAD:src/component/Page4/css/Page4.css
+}
+
+.container {
+  text-align: center;
+  background-image: url(../img/background.png);
+=======
   background-image: url(../../img/bg.png);
+>>>>>>> develop:src/component/Page4/Page/Page4_css/page4.css
   background-attachment: fixed;
   background-position: top;
   height: 100vh;

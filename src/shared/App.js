@@ -1,9 +1,18 @@
 import React, { useEffect } from "react";
 import "./App.css";
+<<<<<<< HEAD
+import Page1 from "../component/Page1/Page1";
+import Page2 from "../component/Page2/Page2";
+import Page3 from "../component/Page3/Page3";
+import Page4 from "../component/Page4/component/Page4";
+import Page4Sharing from "../component/Page4/component/Page4Sharing";
+import Page5 from "../component/Page5/Page5";
+=======
 import PageScroll from "../main/Scroll";
 // import Page5 from "../component/Page5/Page5";
 import Page4 from "../component/Page4/component/page4";
 // import Page3 from "../component/Page3/Page3";
+>>>>>>> develop
 
 // Rollback changes in this file before push or pull request !
 export default function App() {
@@ -17,12 +26,31 @@ export default function App() {
   return (
     <>
       <div>
+<<<<<<< HEAD
+        <Page1 />
+      </div>
+      <div>
+        <Page2 />
+      </div>
+      <div>
+        <Page3 />
+      </div>
+      <div>
+        <Page4 />
+      </div>
+      <div>
+        <Page4Sharing />
+      </div>
+      <div>
+        <Page5 />
+=======
         {/* <PageScroll /> */}
         {/* page3 확인용 */}
         {/* <Page3 /> */}
         {/* page4 확인용 */}
         <Page4 />
         {/* <Page5 /> */}
+>>>>>>> develop
       </div>
     </>
   );

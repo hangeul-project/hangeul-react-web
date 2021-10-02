@@ -18,5 +18,5 @@ export default function getQuestionToAnswerMap() {
     map.set(item.id, answerIdx);
     return null;
   });
-  return map;
+  return map; // key value 쌍인데 key가 문제 번호고 value가 정답의 인덱스
 }
