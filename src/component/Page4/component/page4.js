@@ -1,6 +1,6 @@
 import React from "react";
-import "../Page/Page4_css/page4.css";
-import charA from "../img/img.png";
+import "../css/Page4.css";
+import charA from "../img/resultimage/sasin.png";
 import textback from "../img/text_back_line2.png";
 
 const ChoiceBtn = () => (
