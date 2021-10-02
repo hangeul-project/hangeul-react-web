@@ -102,13 +102,8 @@ const QuizContainer = (props) => {
       >
         결과 확인하기
       </button>
-      <button
-        type="button"
-        onClick={() => {
-          props.onResultClick();
-        }}
-      >
-        결과 확인창
+      <button type="button" onClick={() => props.isResultVisible(true)}>
+        결과 확인
       </button>
     </div>
   );
