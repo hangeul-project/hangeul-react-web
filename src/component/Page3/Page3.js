@@ -8,6 +8,7 @@ import "./Page3.css";
 import QuizContainer from "./UI/QuizContainer";
 import StartQuizButton from "./UI/StartQuizButton";
 import HangeulQuizJson from "./hangeul-quiz.json";
+import Page4 from "../Page4/component/Page4";
 
 const Page3 = () => {
   useEffect(() => {
@@ -16,6 +17,10 @@ const Page3 = () => {
   const [isQuizVisible, setIsQuizVisible] = useState(false);
   const onStartClick = () => {
     setIsQuizVisible(!isQuizVisible);
+  };
+  const [isResultVisible, setIsResultVisible] = useState(false);
+  const onResultClick = () => {
+    setIsResultVisible(!isResultVisible);
   };
 
   return (
@@ -53,6 +58,10 @@ const Page3 = () => {
             onClickListener={onStartClick}
             isVisible={!isQuizVisible}
           />
+        </div>
+        <div>
+          <QuizContainer onResultClick={onResultClick} />
+          {isResultVisible ? <Page4 /> : null};{" "}
         </div>
       </div>
     </div>
