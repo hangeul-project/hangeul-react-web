@@ -112,7 +112,6 @@ div {
     right: 5vw;
     margin-bottom: -3em;
   }
-
   .greeting-xinchao {
     font-size: 3em;
     flex-basis: 50%;
@@ -120,15 +119,6 @@ div {
     left: 5vw;
     margin-bottom: -3em;
   }
-
-  .greeting-guten {
-    font-size: 3em;
-    flex-basis: 100%;
-    position: relative;
-    left: 20vw;
-    margin-bottom: -3em;
-  }
-
   .greeting-nihao {
     font-size: 4em;
     flex-basis: 100%;
@@ -136,13 +126,11 @@ div {
     right: 18vw;
     margin-bottom: -1em;
   }
-
   .greeting-kor {
     font-size: 5em;
     flex-basis: 100%;
     position: relative;
   }
-
   .greeting-bonjour {
     font-size: 3em;
     flex-basis: 100%;
@@ -150,7 +138,6 @@ div {
     right: 35vw;
     margin-top: -1em;
   }
-
   .greeting-hola {
     font-size: 4em;
     flex-basis: 100%;
@@ -158,7 +145,6 @@ div {
     left: 30vw;
     margin-top: -4em;
   }
-
   .greeting-goni {
     font-size: 3em;
     flex-basis: 100%;
@@ -166,7 +152,6 @@ div {
     right: 25vw;
     margin-top: -5em;
   }
-
   .greeting-sawa {
     font-size: 3em;
     flex-basis: 100%;
