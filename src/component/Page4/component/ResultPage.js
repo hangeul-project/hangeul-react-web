@@ -11,18 +11,6 @@ import andre from "../img/resultimage/andre.png";
 
 //  This component decide what resultpage will be shown to the user based on the user's answer rate.
 
-const Decide = () => {
-  const [showResults, setShowResults] = React.useState(false);
-  const onClick = () => setShowResults(true);
-  return (
-    <div>
-      <input type="submit" value="Decide" onClick={onClick} />
-      {showResults ? <Results /> : null}
-    </div>
-  );
-};
-//  Result component is operated when clicked
-
 const Results = () => {
   let count = 0;
   let num = 0;
@@ -87,4 +75,4 @@ const Results = () => {
   );
 };
 
-export default Decide;
+export default Results;

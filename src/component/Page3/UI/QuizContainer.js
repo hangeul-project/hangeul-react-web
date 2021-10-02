@@ -19,6 +19,7 @@ const QuizContainer = props => {
     optionArr: [],
   });
   const [isContentLoaded, setIsContentLoaded] = useState(false);
+
   const getQuizContent = () => {
     let answers = [];
     // eslint-disable-next-line
@@ -84,7 +85,6 @@ const QuizContainer = props => {
       }
     >
       <QuizProgressBar progress={solvedQuizCount + 1} />
-
       {isContentLoaded && (
         <QuizCard
           question={quizContent.questionArr[solvedQuizCount]}
@@ -93,14 +93,12 @@ const QuizContainer = props => {
           onAnswerClick={onAnswerClick}
         />
       )}
-
       <QuizCountController
         onIncrementClick={onIncrementClick}
         onDecrementClick={onDecrementClick}
         solvedQuizCount={solvedQuizCount}
         totalQuizCount={TOTAL_QUIZ_NUM}
       />
-
       <button
         className={
           solvedQuizCount === 9
@@ -111,6 +109,9 @@ const QuizContainer = props => {
         onClick={onQuizFinished}
       >
         결과 확인하기
+      </button>
+      <button type="button" onClick={() => props.isResultVisible(true)}>
+        결과 확인
       </button>
     </div>
   );
