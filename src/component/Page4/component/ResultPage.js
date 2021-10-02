@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../css/Page4.css";
 import getQuestionToAnswerMap from "../../../database/QuizService";
 import { getUserSelectedAnswer } from "../../../database/LocalStorage";
@@ -20,16 +21,52 @@ const Results = () => {
     } //  Count how many quizes the user correctly answered
   }
   if (count < 1) {
-    return <Jumo />;
+    return (
+      <div>
+        <Router>
+          <Switch>
+            <Route path="/Jumo" component={Jumo} />
+            <Link to="/Jumo"> 당신의 결과는 ?! </Link>
+          </Switch>
+        </Router>
+      </div>
+    );
   }
-  if (count < 5) {
-    return <Andre />;
+  if (count >= 1 && count < 5) {
+    return (
+      <div>
+        <Router>
+          <Switch>
+            <Route path="/Andre" component={Andre} />
+            <Link to="/Andre"> 당신의 결과는 ?! </Link>
+          </Switch>
+        </Router>
+      </div>
+    );
   }
-  if (count < 7) {
-    return <Idol />;
+  if (count >= 5 && count < 7) {
+    return (
+      <div>
+        <Router>
+          <Switch>
+            <Route path="/Idol" component={Idol} />
+            <Link to="/Idol"> 당신의 결과는 ?! </Link>
+          </Switch>
+        </Router>
+      </div>
+    );
   }
-  if (count < 10) {
-    return <Hakja />;
+  if (count >= 7 && count < 10) {
+    return (
+      <div>
+        <Router>
+          <Switch>
+            <Route path="/Hakja" component={Hakja} />
+            <Link to="/Hakja"> 당신의 결과는 ?! </Link>
+          </Switch>
+        </Router>
+      </div>
+    );
   }
   return null;
 };
