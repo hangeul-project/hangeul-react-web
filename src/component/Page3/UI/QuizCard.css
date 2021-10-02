@@ -1,11 +1,12 @@
 .quiz-card-outer-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
   border-radius: 30px;
   padding: 1rem;
   transition: all 1s;
-  border-style: dashed;
-  border-color: fuchsia;
+  /* border-style: dashed; */
+  /* border-color: grey; */
   display: flex;
   flex-direction: column;
+  align-items: center;
 }

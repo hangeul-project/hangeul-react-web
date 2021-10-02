@@ -40,6 +40,7 @@ const Page3 = () => {
             }
           >
             <img
+              className="bg-container"
               src={quizStartBackground}
               alt="quiz-start-background"
               width="100%"
@@ -47,12 +48,13 @@ const Page3 = () => {
             <h3 className="quiz-start-title">
               한글날 기념 - 제 1회 - 천하제일 세종대회
             </h3>
+            <StartQuizButton
+              className="start-quiz-button"
+              buttonText="퀴즈 시작!"
+              onClickListener={onStartClick}
+              isVisible={!isQuizVisible}
+            />
           </div>
-          <StartQuizButton
-            buttonText="퀴즈 시작!"
-            onClickListener={onStartClick}
-            isVisible={!isQuizVisible}
-          />
         </div>
       </div>
     </div>
