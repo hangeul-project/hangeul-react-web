@@ -25,7 +25,8 @@
 }
 
 .bg-container {
-  height: 70vh;
+  height: 80vh;
+  width: 65vw;
 }
 
 .start-quiz-button {
@@ -72,7 +73,7 @@
   height: 80vh;
   flex-basis: 35%;
   position: relative;
-  bottom: 87vh;
+  bottom: 90vh;
   z-index: 3;
 }
 

@@ -43,7 +43,6 @@ const Page3 = () => {
               className="bg-container"
               src={quizStartBackground}
               alt="quiz-start-background"
-              width="100%"
             />
             <h3 className="quiz-start-title">
               한글날 기념 - 제 1회 - 천하제일 세종대회

@@ -22,6 +22,10 @@
   margin: 0.5em;
 }
 
+.hidden {
+  display: none;
+}
+
 /* for Quiz visibility toggle */
 .quiz-hidden {
   display: none;

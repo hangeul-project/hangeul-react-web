@@ -11,7 +11,8 @@ import * as Storage from "../../../database/LocalStorage";
 export const TOTAL_QUIZ_NUM = 10;
 const userSelectedAnswerMap = new Map();
 
-const QuizContainer = (props) => {
+// eslint-disable-next-line
+const QuizContainer = props => {
   const [solvedQuizCount, setSolvedQuizCount] = useState(0);
   const [quizContent, setQuizContent] = useState({
     questionArr: [],
@@ -20,11 +21,14 @@ const QuizContainer = (props) => {
   const [isContentLoaded, setIsContentLoaded] = useState(false);
   const getQuizContent = () => {
     let answers = [];
-    props.quizItem.map((item) => {
+    // eslint-disable-next-line
+    props.quizItem.map(item => {
       // eslint-disable-next-line
       console.debug("=== loaded only once ? ===");
+      // eslint-disable-next-line
       quizContent.questionArr.push(item.question);
-      item.options.map((answerItem) => {
+      // eslint-disable-next-line
+      item.options.map(answerItem => {
         answers.push(answerItem);
         return null;
       });
@@ -61,8 +65,8 @@ const QuizContainer = (props) => {
     // 사용자가 몇 번을 정답으로 선택했는지에 대해서 local storage 에 저장한다.
     Storage.saveUserSelectedAnswer(solvedQuizCount + 1, selectedAnswerId);
   };
-
-  const onQuizFinished = (event) => {
+  // eslint-disable-next-line
+  const onQuizFinished = event => {
     // eslint-disable-next-line
     console.debug(userSelectedAnswerMap);
     userSelectedAnswerMap.forEach((value, key) => {
@@ -98,7 +102,11 @@ const QuizContainer = (props) => {
       />
 
       <button
-        className="check-quiz-result-button"
+        className={
+          solvedQuizCount === 9
+            ? "check-quiz-result-button"
+            : "check-quiz-result-button hidden"
+        }
         type="button"
         onClick={onQuizFinished}
       >
