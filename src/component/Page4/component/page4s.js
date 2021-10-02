@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Page/Page4_css/page4s.css";
 import charA from "../img/img.png";
-import kakao from "../img/kakao.png";
+import KakaoShareButton from "./KakaoShareButton";
+import ClipboardCopy from "./textcopy";
 
 const ChoiceBtn = () => (
   <div className="choice">
@@ -29,14 +30,30 @@ const Page4s = () => {
         <div className="grid__container">
           <div className="item1">어디에 공유하겠소?</div>
           <div className="item2">
-            카카오톡
-            <img src={kakao} alt="kakao" className="kakao" />
+            <KakaoShareButton />
           </div>
           <div className="item3" />
           <div className="item4">인스타그램</div>
-          <div className="item5">페이스북</div>
+          <div className="item5">
+            <div
+              className="fb-share-button"
+              data-href="http://localhost:3000/"
+              data-layout="button"
+              data-size="large"
+            >
+              <a
+                target="blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/"
+                className="fb-xfbml-parse-ignore"
+              >
+                페이스북
+              </a>
+            </div>
+          </div>
           <div className="item3" />
-          <div className="item6">트위터</div>
+          <div className="item6">
+            <ClipboardCopy />
+          </div>
           <div className="item3" />
           <div className="item3" />
         </div>

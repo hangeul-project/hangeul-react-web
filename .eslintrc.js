@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
+    "no-use-before-define": "off",
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
     "prettier/prettier": [
       "error",
