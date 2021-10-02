@@ -26,40 +26,37 @@ const Page4s = () => {
         <a href="http://portal.hanyang.ac.kr">내부바2</a>
         <a href="http://www.google.com">내부바3</a>
       </div>
-      <div className="outer-container-page4">
-        <div className="grid__container">
-          <div className="item1">어디에 공유하겠소?</div>
-          <div className="item2">
+      <div className="outer-container-sns">
+        {/* <div className="item1">어디에 공유하겠소?</div> */}
+        <div className="sns-container">
+          {/* 카카오 공유 */}
+          <div className="kakao">
             <KakaoShareButton />
           </div>
-          <div className="item3" />
-          <div className="item4">인스타그램</div>
-          <div className="item5">
-            <div
-              className="fb-share-button"
-              data-href="http://localhost:3000/"
-              data-layout="button"
-              data-size="large"
+
+          {/* 페이스북 공유 */}
+          <div
+            className="fb-share-button"
+            data-href="http://localhost:3000/"
+            data-layout="button"
+            data-size="large"
+          >
+            <a
+              target="blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/"
+              className="fb-xfbml-parse-ignore"
             >
-              <a
-                target="blank"
-                href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/"
-                className="fb-xfbml-parse-ignore"
-              >
-                페이스북
-              </a>
-            </div>
+              페이스북
+            </a>
           </div>
-          <div className="item3" />
-          <div className="item6">
+
+          {/* 클립보드 공유 */}
+          <div className="clipboard">
             <ClipboardCopy />
           </div>
-          <div className="item3" />
-          <div className="item3" />
         </div>
-        <div className="char__img">
-          <img className="char" src={charA} alt="캐릭터" />
-        </div>
+
+        <img className="char" src={charA} alt="캐릭터" />
       </div>
     </>
   );
