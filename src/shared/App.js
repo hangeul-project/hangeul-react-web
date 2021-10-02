@@ -6,6 +6,7 @@ import Page3 from "../component/Page3/Page3";
 // import Page4 from "../component/Page4/component/Page4";
 // import Page4Sharing from "../component/Page4/component/Page4Sharing";
 import Page5 from "../component/Page5/Page5";
+import Jumo from "../component/Page4/component/result/Jumo";
 
 // Rollback changes in this file before push or pull request !
 export default function App() {
@@ -35,6 +36,9 @@ export default function App() {
       </div> */}
       <div>
         <Page5 />
+      </div>
+      <div>
+        <Jumo />
       </div>
     </>
   );
