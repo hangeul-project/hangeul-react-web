@@ -20,7 +20,9 @@ const Page3 = () => {
     setIsQuizVisible(!isQuizVisible);
   };
   const [isResultVisible, setIsResultVisible] = useState(false);
-
+  const onResultVisible = () => {
+    setIsResultVisible(!isResultVisible);
+  };
   return (
     <>
       <div className="outer-container-page3">
@@ -38,6 +40,7 @@ const Page3 = () => {
             <QuizContainer
               quizItem={HangeulQuizJson}
               isVisible={isQuizVisible}
+              onResultVisible={onResultVisible}
             />
             <div
               className={
@@ -58,7 +61,7 @@ const Page3 = () => {
                 className="start-quiz-button"
                 buttonText="퀴즈 시작!"
                 onClickListener={onStartClick}
-                isVisible={!isQuizVisible}
+                setIsQuizVisible={setIsQuizVisible}
               />
             </div>
           </div>

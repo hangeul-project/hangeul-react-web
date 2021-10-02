@@ -110,7 +110,15 @@ const QuizContainer = props => {
       >
         결과 확인하기
       </button>
-      <button type="button" onClick={() => props.isResultVisible(true)}>
+      <button
+        className={
+          solvedQuizCount === 9
+            ? "check-quiz-result-button"
+            : "check-quiz-result-button hidden"
+        }
+        type="button"
+        onClick={() => props.onResultVisible}
+      >
         결과 확인
       </button>
     </div>
