@@ -18,11 +18,11 @@ li {
   list-style: none;
 }
 
-.outer-container-jumo {
+.outer-container-idol {
   font-family: Jaemin;
 }
 
-.container-jumo {
+.container-idol {
   text-align: center;
   background-image: url(../../img/background.png);
   background-attachment: fixed;
@@ -34,7 +34,7 @@ li {
 }
 
 @media (min-width: 769px) and (max-width: 1299px) {
-  .container-jumo {
+  .container-idol {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -58,7 +58,7 @@ li {
 
   .youris {
     color: #292929;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bolder;
     z-index: 2;
     display: grid;
@@ -68,7 +68,7 @@ li {
 
   .detail {
     color: #292929;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     z-index: 3;
     display: grid;
@@ -89,7 +89,7 @@ li {
 
 /* 1300px이상 너비에 글씨, 캐릭터 크기 적용 */
 @media (min-width: 1300px) {
-  .container-jumo {
+  .container-idol {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -98,12 +98,12 @@ li {
   }
 
   .textback {
-    flex-basis: 100%;
+    flex-basis: 0%;
     width: 60vw;
-    height: 600px;
+    height: 100vh;
     z-index: 1;
     position: absolute;
-    min-height: 100vh;
+    min-height: 20vh;
   }
 
   .description {
@@ -116,6 +116,9 @@ li {
     font-size: 2.5rem;
     font-weight: bolder;
     z-index: 2;
+    position: relative;
+    display: grid;
+    place-items: center;
     min-height: 40vh;
   }
 
@@ -124,7 +127,7 @@ li {
     font-size: 1.5rem;
     font-weight: bold;
     z-index: 3;
-    min-height: 20vh;
+    min-height: 0vh;
   }
 
   .char {
@@ -135,13 +138,13 @@ li {
     margin-left: auto;
     z-index: 4;
     top: 20vh;
-    left: 10vw;
+    left: 0vw;
   }
 }
 
 /* 모바일 버전 css */
 @media (min-width: 441px) and (max-width: 768px) {
-  .container-jumo {
+  .container-idol {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -152,11 +155,12 @@ li {
   }
 
   .textback {
-    top: 30vh;
-    width: 100vw;
-    height: 70vh;
-    z-index: 2;
+    flex-basis: 100%;
+    width: 60vw;
+    height: 600px;
+    z-index: 1;
     position: absolute;
+    min-height: 100vh;
   }
 
   .description {
@@ -197,7 +201,7 @@ li {
 }
 
 @media (max-width: 440px) {
-  .container-jumo {
+  .container-idol {
     display: flex;
     width: 100vw;
     height: 100vh;
