@@ -7,6 +7,7 @@ import QuizCountController from "./QuizCountController";
 import "./QuizContainer.css";
 import * as DB from "../../../database/database";
 import * as Storage from "../../../database/LocalStorage";
+import Page4 from "../../Page4/component/Page4";
 
 export const TOTAL_QUIZ_NUM = 10;
 const userSelectedAnswerMap = new Map();
@@ -18,6 +19,9 @@ const QuizContainer = (props) => {
     optionArr: [],
   });
   const [isContentLoaded, setIsContentLoaded] = useState(false);
+
+  const [showResults, setShowResults] = React.useState(false);
+  const onClick = () => setShowResults(true);
   const getQuizContent = () => {
     let answers = [];
     props.quizItem.map((item) => {
@@ -80,7 +84,6 @@ const QuizContainer = (props) => {
       }
     >
       <QuizProgressBar progress={solvedQuizCount + 1} />
-
       {isContentLoaded && (
         <QuizCard
           question={quizContent.questionArr[solvedQuizCount]}
@@ -103,6 +106,8 @@ const QuizContainer = (props) => {
         onClick={onQuizFinished}
       >
         결과 확인하기
+        <input type="submit" value="Page4" onClick={onClick} />
+        {showResults ? <Page4 /> : null}
       </button>
     </div>
   );
