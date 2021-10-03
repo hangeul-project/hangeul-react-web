@@ -1,0 +1,12 @@
+.horizontal-scroll-wrapper {
+    /* width: 50%; */
+    /* height: 300px; */
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .explanation-outer-container {
+      justify-content: center;   
+      align-items: center;
+      padding-top: 50px;
+  }
