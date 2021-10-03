@@ -1,17 +1,17 @@
 .count-controller {
-    margin-top: 2rem;
-    padding: 1rem;
-    border-style: dashed;
-    border-color: black;
+  margin-top: 2rem;
+  padding: 1rem;
+  /* border-style: dashed; */
+  border-color: black;
 }
 
 .control-button {
-    padding: 0.3rem;
-    margin: 0.3rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

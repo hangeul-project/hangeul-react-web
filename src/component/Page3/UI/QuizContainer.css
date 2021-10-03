@@ -1,13 +1,18 @@
 .quiz-container-outer {
   margin: 1rem auto;
   padding: 2rem;
-  max-width: 750px;
-  background-color: whitesmoke;
+  height: 80vh;
+  width: 60vw;
+  background-image: url("../img/text_back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65vw 80vh;
   display: flex;
   flex-direction: column;
-  border-style: dashed;
-  border-color: grey;
+  /* border-style: dashed;
+  border-color: grey; */
   color: black;
+  justify-content: center;
 }
 
 .check-quiz-result-button {
@@ -15,6 +20,10 @@
   align-self: center;
   padding: 1em;
   margin: 0.5em;
+}
+
+.hidden {
+  display: none;
 }
 
 /* for Quiz visibility toggle */

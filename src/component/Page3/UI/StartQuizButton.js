@@ -7,11 +7,7 @@ const StartQuizButton = ({ buttonText, onClickListener, isVisible }) => {
     // Visibility toggle. Once quiz is started, 'Quiz start' button should not be visible.
     // (or at least change its text to 'End Quiz')
     <button
-      className={
-        isVisible
-          ? "start-quiz-button"
-          : "start-quiz-button start-quiz-button-hidden"
-      }
+      className={isVisible ? "start-quiz-button" : "start-quiz-button-hidden"}
       type="button"
       onClick={onClickListener}
     >

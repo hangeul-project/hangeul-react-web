@@ -24,6 +24,16 @@
   flex-basis: 100%;
 }
 
+.bg-container {
+  height: 80vh;
+  width: 65vw;
+}
+
+.start-quiz-button {
+  position: relative;
+  bottom: 15vh;
+}
+
 .challenge {
   width: 400px;
   height: 100px;
@@ -41,6 +51,7 @@
   display: flex;
   position: relative;
   z-index: 3;
+  align-items: center;
 }
 /* .sejong {
   display: flex;
@@ -62,7 +73,7 @@
   height: 80vh;
   flex-basis: 35%;
   position: relative;
-  bottom: 87vh;
+  bottom: 90vh;
   z-index: 3;
 }
 
@@ -117,13 +128,13 @@
 /* Quiz */
 .quiz-outer-container {
   /* This border style is only for debugging purpose. Modify design later. */
-  border-style: dashed;
-  border-color: fuchsia;
-  flex-basis: 50%;
+  /* border-style: dashed; */
+  /* border-color: fuchsia; */
+  flex-basis: 70%;
   margin-left: 4rem;
   position: relative;
   z-index: 3;
-  bottom: 105vh;
+  bottom: 110vh;
   right: 2vw;
-  width: 40%;
+  width: 60vw;
 }
