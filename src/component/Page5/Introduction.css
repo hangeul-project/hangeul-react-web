@@ -10,6 +10,9 @@
 .introduction-text {
   width: 65vw;
   background-color: #bbb;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .introduction-outer-container {

@@ -1,12 +1,17 @@
-.horizontal-scroll-wrapper {
-    /* width: 50%; */
-    /* height: 300px; */
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+.explanation-outer-container {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
 
-  .explanation-outer-container {
-      justify-content: center;   
-      align-items: center;
-      padding-top: 50px;
-  }
+.explain-card-area > ul {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+}
+
+.explain-card-area > li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+}

@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Introduction from "./Introduction";
 
-const IntroductionContainer = () => {
+const IntroductionContainer = ({ componentId }) => {
   const sampleImageUrl = "https://via.placeholder.com/200";
   const sampleText = `Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry standard dummy text ever
@@ -13,7 +14,7 @@ const IntroductionContainer = () => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.`;
   return (
-    <div className="introduction-list-outer-container" id="tab3">
+    <div className="introduction-list-outer-container" id={componentId}>
       <Introduction
         profileImageUrl={sampleImageUrl}
         introductionText={sampleText}
@@ -41,3 +42,7 @@ const IntroductionContainer = () => {
 };
 
 export default IntroductionContainer;
+
+IntroductionContainer.propTypes = {
+  componentId: PropTypes.number.isRequired,
+};

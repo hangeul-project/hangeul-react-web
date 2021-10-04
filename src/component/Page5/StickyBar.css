@@ -1,7 +1,5 @@
 .sticky-bar-outer-container {
     height: 50px;
-    background-color: black;
-    border: #2779BF;
     border-radius: 1px;
     border-style: dashed;
     display: flex;
@@ -21,6 +19,5 @@ ul.nav>li:hover {
 }
 
 ul.nav>li>a {
-    color: white;
     text-decoration: none;
 }

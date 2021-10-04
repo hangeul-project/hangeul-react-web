@@ -8,5 +8,21 @@
     transition: all 1s;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    width: 500px;
+    flex-wrap: nowrap;
+}
+
+.answer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-rate {
+    font-style: bold;
+    color: red;
+    margin-right: 2rem;
+}
+
+.explanation-text {
+    font-style: italic;
 }
