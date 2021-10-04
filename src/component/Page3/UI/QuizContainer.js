@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import QuizCard from "./QuizCard";
 import QuizProgressBar from "./QuizProgressBar";
 import QuizCountController from "./QuizCountController";
@@ -113,6 +114,12 @@ const QuizContainer = props => {
       </button>
     </div>
   );
+};
+
+QuizContainer.propTypes = {
+  quizItem: PropTypes.string.isRequired,
+  isVisible: PropTypes.bool.isRequired,
+  onResultVisible: PropTypes.bool.isRequired,
 };
 
 export default QuizContainer;
