@@ -12,7 +12,7 @@ export const TOTAL_QUIZ_NUM = 10;
 const userSelectedAnswerMap = new Map();
 
 // eslint-disable-next-line
-const QuizContainer = props => {
+const QuizContainer = (props) => {
   const [solvedQuizCount, setSolvedQuizCount] = useState(0);
   const [quizContent, setQuizContent] = useState({
     questionArr: [],
@@ -23,13 +23,13 @@ const QuizContainer = props => {
   const getQuizContent = () => {
     let answers = [];
     // eslint-disable-next-line
-    props.quizItem.map(item => {
+    props.quizItem.map((item) => {
       // eslint-disable-next-line
       console.debug("=== loaded only once ? ===");
       // eslint-disable-next-line
       quizContent.questionArr.push(item.question);
       // eslint-disable-next-line
-      item.options.map(answerItem => {
+      item.options.map((answerItem) => {
         answers.push(answerItem);
         return null;
       });
@@ -67,7 +67,7 @@ const QuizContainer = props => {
     Storage.saveUserSelectedAnswer(solvedQuizCount + 1, selectedAnswerId);
   };
   // eslint-disable-next-line
-  const onQuizFinished = event => {
+  const onQuizFinished = (event) => {
     // eslint-disable-next-line
     console.debug(userSelectedAnswerMap);
     userSelectedAnswerMap.forEach((value, key) => {

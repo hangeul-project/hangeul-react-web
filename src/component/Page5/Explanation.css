@@ -1,0 +1,17 @@
+.explanation-outer-container {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+.explain-card-area > ul {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+}
+
+.explain-card-area > li {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+}
